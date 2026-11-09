@@ -188,7 +188,10 @@
 </div>
 <div id="tip" role="tooltip"></div>
 
-<script src="data/data.js"></script>
+<script>
+  // always fetch the latest data (GitHub Pages lets browsers cache files for ~10 minutes)
+  document.write('<script src="data/data.js?v=' + Date.now() + '"><\/script>');
+</script>
 <script>
 (() => {
   const SNAPS = window.MEANS_SNAPSHOTS || [];
