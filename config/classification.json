@@ -1,0 +1,79 @@
+{
+  "_readme": "How each video is bucketed. A video title ending in ' | <Name>' is matched against these lists (case-insensitive). Anything unmatched falls to 'Film'. Edit this file to fix a misclassified title, then re-run the build. Shows listed in own_bucket_shows get their own section on the dashboard instead of sitting with films & series.",
+  "creators": [
+    "Unlearning Economics",
+    "Positive Leftist News",
+    "Second Thought",
+    "The Deprogram",
+    "Luna Oi!",
+    "Moss Planet",
+    "Michael Burns",
+    "Prince Shakur",
+    "revolutionaryth0t",
+    "NonCompete",
+    "1Dime",
+    "Our Changing Climate",
+    "Black Green Red",
+    "Hakim",
+    "We're in Hell",
+    "James Rehwald",
+    "The Valley Labor Report",
+    "Meeka le Fay",
+    "Anark",
+    "The Marxist Project",
+    "Unredacted Tonight with Lee Camp",
+    "Atlanta Community Press Collective",
+    "Yugopnik",
+    "Belly of the Beast",
+    "Chill Goblin",
+    "First Thought",
+    "Jonny Wanzer's Promo Videos",
+    "Mondoweiss",
+    "Balkan Odyssey",
+    "Mexie",
+    "This Is Revolution",
+    "The Empire Files",
+    "Economic Update",
+    "Abelina Sabrina",
+    "Off The Rails with Max Kriff"
+  ],
+  "creator_aliases": {
+    "TVLR": "The Valley Labor Report",
+    "Our Changing Climates": "Our Changing Climate",
+    "Lee Camp": "Unredacted Tonight with Lee Camp"
+  },
+  "originals": {
+    "MMN Daily": "Means Morning News",
+    "Means Morning News": "Means Morning News",
+    "By Any Means": "By Any Means",
+    "Miss Me Yet": "Miss Me Yet",
+    "Seize The Memes": "Seize The Memes",
+    "Preserving Worlds": "Preserving Worlds",
+    "Laughter Against The Machine": "Laughter Against The Machine",
+    "Left Trigger": "Left Trigger",
+    "Southpaws Sports": "Southpaws Sports",
+    "Art House Politics": "Art House Politics",
+    "Little Lions Den": "Little Lions Den",
+    "Street Fight": "Street Fight: The TV Show",
+    "The Trillbillies": "The Trillbillies"
+  },
+  "original_ids": {
+    "1945847": "Means TV Specials"
+  },
+  "series_patterns": [
+    {
+      "regex": "^Wild America S\\d+",
+      "series": "Marty Stouffer's Wild America"
+    },
+    {
+      "regex": "^Episode \\d+: ",
+      "series": "CAPITALISM (6-part series)"
+    }
+  ],
+  "series_ids": {
+    "1100130": "Not Even A Show"
+  },
+  "own_bucket_shows": {
+    "Means Morning News": "mmn"
+  }
+}

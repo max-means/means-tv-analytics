@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Means TV · Content Performance</title>
+<style>
+  :root {
+    color-scheme: light;
+    --bg: #f4f3f0; --surface-1: #fcfcfb; --border: #e3e1dc; --grid: #ecebe7;
+    --text-primary: #0b0b0b; --text-secondary: #52514e; --text-muted: #77756f;
+    --creator: #2a78d6; --other: #eb6834; --mmn: #1baf7a; --accent: #0b0b0b;
+    --good: #0f7b3f; --bad: #c0392b; --chip: #eceae5;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:where(:not([data-theme="light"])) {
+      color-scheme: dark;
+      --bg: #111110; --surface-1: #1a1a19; --border: #2c2b29; --grid: #262523;
+      --text-primary: #f0efec; --text-secondary: #c3c2b7; --text-muted: #8f8d86;
+      --creator: #3987e5; --other: #d95926; --mmn: #199e70; --accent: #f0efec;
+      --good: #4cc37f; --bad: #e66767; --chip: #2a2927;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text-primary);
+    font: 14px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, sans-serif; }
+  .wrap { max-width: 1280px; margin: 0 auto; padding: 28px 24px 64px; }
+  header { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 16px; margin-bottom: 20px; }
+  h1 { font-size: 22px; margin: 0; letter-spacing: -0.01em; }
+  .sub { color: var(--text-secondary); margin-top: 4px; }
+  .controls { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+  .seg { display: inline-flex; background: var(--chip); border-radius: 8px; padding: 3px; }
+  .seg button { border: 0; background: transparent; color: var(--text-secondary); padding: 6px 12px;
+    border-radius: 6px; font: inherit; cursor: pointer; }
+  .seg button[aria-pressed="true"] { background: var(--surface-1); color: var(--text-primary); box-shadow: 0 1px 2px rgba(0,0,0,.12); font-weight: 600; }
+  select { font: inherit; padding: 6px 8px; border-radius: 8px; border: 1px solid var(--border); background: var(--surface-1); color: var(--text-primary); }
+  .card { background: var(--surface-1); border: 1px solid var(--border); border-radius: 12px; padding: 18px 20px; }
+  .kpis { display: grid; grid-template-columns: repeat(6, 1fr); gap: 12px; margin-bottom: 12px; }
+  .kpi .label { color: var(--text-secondary); font-size: 12px; display: flex; align-items: center; gap: 6px; }
+  .kpi .value { font-size: 26px; font-weight: 650; margin-top: 4px; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; }
+  .kpi .note { color: var(--text-muted); font-size: 12px; margin-top: 2px; }
+  .delta.up { color: var(--good); } .delta.down { color: var(--bad); }
+  .swatch { width: 10px; height: 10px; border-radius: 3px; display: inline-block; flex: none; }
+  .split { margin-bottom: 12px; }
+  .split .bar { display: flex; height: 14px; gap: 2px; border-radius: 4px; overflow: hidden; margin: 10px 0 8px; }
+  .split .bar div { height: 100%; }
+  .split .legend { display: flex; gap: 18px; color: var(--text-secondary); font-size: 13px; flex-wrap: wrap; }
+  .split .legend span { display: inline-flex; align-items: center; gap: 6px; }
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 12px; }
+  h2 { font-size: 15px; margin: 0; display: flex; align-items: center; gap: 8px; }
+  .card-head { display: flex; justify-content: space-between; align-items: center; gap: 8px; margin-bottom: 4px; flex-wrap: wrap; }
+  .hint { color: var(--text-muted); font-size: 12px; margin-bottom: 12px; }
+  .chips { display: flex; gap: 6px; flex-wrap: wrap; }
+  .chips button { border: 1px solid var(--border); background: transparent; color: var(--text-secondary); border-radius: 999px;
+    padding: 3px 10px; font: inherit; font-size: 12px; cursor: pointer; }
+  .chips button[aria-pressed="true"] { background: var(--accent); color: var(--surface-1); border-color: var(--accent); }
+  .bars { display: grid; grid-template-columns: minmax(0, 46%) 1fr auto; column-gap: 10px; row-gap: 7px; align-items: center; }
+  .bars .name { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 13px; }
+  .bars .name small { color: var(--text-muted); }
+  .bars .track { height: 16px; position: relative; }
+  .bars .fill { height: 100%; border-radius: 0 4px 4px 0; min-width: 2px; }
+  .bars .val { font-variant-numeric: tabular-nums; color: var(--text-secondary); font-size: 12px; text-align: right; min-width: 52px; }
+  .bars .row { display: contents; }
+  .bars .row:hover .name { color: var(--text-primary); text-decoration: underline; text-decoration-color: var(--border); }
+  .bars .row:hover .fill { filter: brightness(1.1); }
+  .rank { color: var(--text-muted); font-variant-numeric: tabular-nums; display: inline-block; width: 22px; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  th, td { text-align: left; padding: 7px 8px; border-bottom: 1px solid var(--grid); }
+  th { color: var(--text-secondary); font-weight: 600; font-size: 12px; cursor: pointer; user-select: none; white-space: nowrap; }
+  th.num, td.num { text-align: right; font-variant-numeric: tabular-nums; }
+  tbody tr:hover { background: var(--grid); }
+  .tag { display: inline-flex; align-items: center; gap: 5px; font-size: 12px; color: var(--text-secondary); white-space: nowrap; }
+  .table-tools { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; margin-bottom: 10px; }
+  input[type=search] { font: inherit; padding: 6px 10px; border-radius: 8px; border: 1px solid var(--border);
+    background: var(--surface-1); color: var(--text-primary); min-width: 240px; }
+  .tablewrap { max-height: 560px; overflow: auto; }
+  thead th { position: sticky; top: 0; background: var(--surface-1); }
+  #tip { position: fixed; pointer-events: none; background: var(--surface-1); border: 1px solid var(--border); border-radius: 8px;
+    padding: 8px 10px; font-size: 12px; box-shadow: 0 4px 16px rgba(0,0,0,.15); display: none; max-width: 320px; z-index: 10; }
+  #tip b { display: block; margin-bottom: 4px; font-size: 13px; }
+  #tip .r { display: flex; justify-content: space-between; gap: 16px; color: var(--text-secondary); }
+  #tip .r span:last-child { color: var(--text-primary); font-variant-numeric: tabular-nums; }
+  .pill { display: inline-block; font-size: 11px; padding: 1px 7px; border-radius: 999px; border: 1px solid var(--border);
+    color: var(--text-secondary); margin: 1px 3px 1px 0; white-space: nowrap; }
+  .pill.warn { border-color: var(--other); color: var(--text-primary); }
+  .pill.hidden { border-style: dashed; }
+  .mini { position: relative; height: 10px; width: 120px; background: var(--grid); border-radius: 0 3px 3px 0; display: inline-block; vertical-align: middle; margin-right: 8px; }
+  .mini .f { position: absolute; left: 0; top: 0; bottom: 0; background: var(--other); border-radius: 0 3px 3px 0; }
+  .mini .m { position: absolute; top: -3px; bottom: -3px; width: 2px; background: var(--text-primary); }
+  .push-tools { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; margin-bottom: 10px; }
+  .push-tools label { color: var(--text-secondary); font-size: 13px; display: inline-flex; gap: 6px; align-items: center; }
+  .btn { border: 1px solid var(--border); background: var(--surface-1); color: var(--text-primary); border-radius: 8px; padding: 6px 12px; font: inherit; font-size: 13px; cursor: pointer; }
+  .btn:hover { background: var(--grid); }
+  footer { color: var(--text-muted); font-size: 12px; margin-top: 18px; line-height: 1.6; }
+  @media (max-width: 1100px) { .kpis { grid-template-columns: repeat(3, 1fr); } }
+  @media (max-width: 960px) { .kpis { grid-template-columns: repeat(2, 1fr); } .grid2 { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <h1>Means TV · Content Performance</h1>
+      <div class="sub" id="subtitle"></div>
+    </div>
+    <div class="controls">
+      <div class="seg" role="group" aria-label="Time window">
+        <button data-win="7d" aria-pressed="true">Past 7 days</button>
+        <button data-win="30d" aria-pressed="false">Past 30 days</button>
+      </div>
+      <label class="sub" style="margin:0">Snapshot <select id="snap"></select></label>
+    </div>
+  </header>
+
+  <section class="kpis" id="kpis"></section>
+
+  <section class="card split" id="split"></section>
+
+  <section class="grid2">
+    <div class="card">
+      <div class="card-head"><h2><span class="swatch" style="background:var(--creator)"></span>Top creator videos</h2>
+        <div class="chips" id="metric-c"></div></div>
+      <div class="hint">Ranked by watch hours. Hover a bar for views and average minutes watched per view.</div>
+      <div class="bars" id="bars-creator"></div>
+    </div>
+    <div class="card">
+      <div class="card-head"><h2><span class="swatch" style="background:var(--other)"></span>Top films &amp; non-creator series</h2>
+        <div class="chips" id="type-filter"></div></div>
+      <div class="hint">Ranked by watch hours. MMN Daily is tracked separately below.</div>
+      <div class="bars" id="bars-other"></div>
+    </div>
+  </section>
+
+  <section class="grid2">
+    <div class="card">
+      <div class="card-head"><h2><span class="swatch" style="background:var(--creator)"></span>Creator channels</h2></div>
+      <div class="hint">All of a creator's videos in the window, summed.</div>
+      <div class="bars" id="shows-creator"></div>
+    </div>
+    <div class="card">
+      <div class="card-head"><h2><span class="swatch" style="background:var(--other)"></span>Shows, series &amp; films</h2></div>
+      <div class="hint">Series and originals summed across episodes; films stand alone.</div>
+      <div class="bars" id="shows-other"></div>
+    </div>
+  </section>
+
+  <section class="grid2">
+    <div class="card">
+      <div class="card-head"><h2><span class="swatch" style="background:var(--mmn)"></span>MMN Daily episodes</h2>
+        <div class="chips" id="metric-m"></div></div>
+      <div class="hint">Top episodes in the window. Newer episodes have had fewer days to collect views.</div>
+      <div class="bars" id="bars-mmn"></div>
+    </div>
+    <div class="card">
+      <div class="card-head"><h2><span class="swatch" style="background:var(--mmn)"></span>MMN Daily at a glance</h2></div>
+      <div class="hint">How the show's episodes in the top 100 add up.</div>
+      <div id="mmn-stats"></div>
+    </div>
+  </section>
+
+  <section class="card">
+    <div class="card-head"><h2>All videos in this window</h2></div>
+    <div class="table-tools">
+      <input type="search" id="q" placeholder="Search titles or shows…" aria-label="Search">
+      <div class="chips" id="bucket-filter"></div>
+    </div>
+    <div class="tablewrap"><table id="tbl"><thead></thead><tbody></tbody></table></div>
+  </section>
+
+  <section class="card" style="margin-top:12px" id="push-card">
+    <div class="card-head"><h2><span class="swatch" style="background:var(--other)"></span>New titles that need a push</h2>
+      <button class="btn" id="copy-push">Copy list for marketing</button></div>
+    <div class="hint" id="push-hint"></div>
+    <div class="push-tools">
+      <div class="chips" id="push-filter"></div>
+      <label><input type="checkbox" id="hide-seasonal" checked> Hide Halloween titles</label>
+    </div>
+    <div class="tablewrap"><table id="push-tbl"><thead></thead><tbody></tbody></table></div>
+  </section>
+
+  <footer id="foot"></footer>
+</div>
+<div id="tip" role="tooltip"></div>
+
+<script src="data/data.js"></script>
+<script>
+(() => {
+  const SNAPS = window.MEANS_SNAPSHOTS || [];
+  const state = { snap: SNAPS.length - 1, win: '7d', otherType: 'All', creatorMetric: 'watch_hours', mmnMetric: 'watch_hours',
+                  bucket: 'All', q: '', sort: 'watch_hours', dir: -1 };
+  const $ = s => document.querySelector(s);
+  const fmt = n => n.toLocaleString('en-US', { maximumFractionDigits: n < 100 ? 1 : 0 });
+  const pct = n => (n * 100).toFixed(0) + '%';
+  const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+  const COLOR = { creator: 'var(--creator)', other: 'var(--other)', mmn: 'var(--mmn)' };
+  const BK = ['creator', 'other', 'mmn'];
+  const sumB = (w, k) => BK.reduce((a, b) => a + (w.buckets[b] ? w.buckets[b][k] : 0), 0);
+  const LABEL = { creator: 'Creator videos', other: 'Films & non-creator series', mmn: 'MMN Daily' };
+  const METRICS = { watch_hours: 'Watch hrs', views: 'Views', avg_min: 'Avg min/view' };
+
+  // --- tooltip
+  const tip = $('#tip');
+  function showTip(e, html) { tip.innerHTML = html; tip.style.display = 'block'; moveTip(e); }
+  function moveTip(e) {
+    const r = tip.getBoundingClientRect();
+    let x = e.clientX + 14, y = e.clientY + 14;
+    if (x + r.width > innerWidth - 8) x = e.clientX - r.width - 14;
+    if (y + r.height > innerHeight - 8) y = e.clientY - r.height - 14;
+    tip.style.left = x + 'px'; tip.style.top = y + 'px';
+  }
+  const hideTip = () => tip.style.display = 'none';
+  const tipRows = rows => rows.map(([k, v]) => `<div class="r"><span>${k}</span><span>${v}</span></div>`).join('');
+
+  function prevSnap() {
+    // most recent earlier snapshot at least 6 days older, for week-over-week deltas
+    const cur = new Date(SNAPS[state.snap].date);
+    for (let i = state.snap - 1; i >= 0; i--) if ((cur - new Date(SNAPS[i].date)) / 864e5 >= 6) return SNAPS[i];
+    return null;
+  }
+  function delta(cur, prev, suffix = '') {
+    if (prev == null || !prev) return '';
+    const d = (cur - prev) / prev;
+    const cls = d >= 0 ? 'up' : 'down';
+    return `<span class="delta ${cls}">${d >= 0 ? '▲' : '▼'} ${Math.abs(d * 100).toFixed(1)}%</span>${suffix}`;
+  }
+
+  function renderKpis(snap, w) {
+    const b = w.buckets, tot = sumB(w, 'watch_hours');
+    const p = prevSnap(), pw = p && p.windows[state.win];
+    const st = snap.store;
+    const prevNote = pw ? ` vs last snapshot` : '';
+    const bk = (k, label) => [label, fmt(b[k].watch_hours), `${pct(b[k].watch_hours / tot)} of total · ${b[k].count} videos`,
+        pw && pw.buckets[k] ? delta(b[k].watch_hours, pw.buckets[k].watch_hours, prevNote) : '', k];
+    $('#kpis').innerHTML = [
+      ['Total watch hours', fmt(tot), `${fmt(sumB(w, 'views'))} views · top 100 videos`,
+        pw ? delta(tot, sumB(pw, 'watch_hours'), prevNote) : '', null],
+      bk('creator', 'Creator videos'), bk('other', 'Films & series'), bk('mmn', 'MMN Daily'),
+      ['Active subscribers', fmt(st.active_subscribers), `${delta(st.active_subscribers, st.active_subscribers_prior_month)} vs ${st.prior_month_as_of}`, '', null],
+      ['MRR', '$' + fmt(Math.round(st.mrr.amount)), `${delta(st.mrr.amount, st.mrr_prior_month.amount)} vs ${st.prior_month_as_of}`, '', null],
+    ].map(([l, v, n, d, sw]) => `<div class="card kpi"><div class="label">${sw ? `<span class="swatch" style="background:${COLOR[sw]}"></span>` : ''}${l}</div>
+      <div class="value">${v}</div><div class="note">${n}</div>${d ? `<div class="note">${d}</div>` : ''}</div>`).join('');
+  }
+
+  function renderSplit(w) {
+    const b = w.buckets, tot = sumB(w, 'watch_hours');
+    const types = b.other.by_type;
+    const orderTypes = ['Means Original', 'Film', 'Series', 'Unmatched'].filter(t => types[t]);
+    const op = [0.95, 0.7, 0.45, 0.3];
+    const TL = { 'Means Original': 'Other Means Originals', Film: 'Films', Series: 'Series', Unmatched: 'Unmatched' };
+    const segs = [['Creator videos', b.creator.watch_hours, 'var(--creator)', 1],
+      ...orderTypes.map((t, i) => [TL[t], types[t].watch_hours, 'var(--other)', op[i]]),
+      ['MMN Daily', b.mmn.watch_hours, 'var(--mmn)', 1]];
+    $('#split').innerHTML = `<div class="card-head"><h2>Where the watch time went</h2></div>
+      <div class="bar" role="img" aria-label="Watch-time split">
+        ${segs.map(([k, v, c, o]) => `<div style="flex:${v};background:${c};opacity:${o}" data-k="${k}" data-v="${v}"></div>`).join('')}
+      </div>
+      <div class="legend">
+        ${segs.map(([k, v, c, o]) => `<span><span class="swatch" style="background:${c};opacity:${o}"></span>${k} · ${fmt(v)} hrs (${pct(v / tot)})</span>`).join('')}
+      </div>`;
+    $('#split').querySelectorAll('.bar div').forEach(el => {
+      el.onmousemove = e => showTip(e, `<b>${el.dataset.k}</b>${tipRows([['Watch hours', fmt(+el.dataset.v)], ['Share', pct(el.dataset.v / tot)]])}`);
+      el.onmouseleave = hideTip;
+    });
+  }
+
+  function bars(el, rows, bucket, opts = {}) {
+    const metric = opts.metric || 'watch_hours';
+    const max = Math.max(...rows.map(r => r[metric]), 1);
+    el.innerHTML = rows.length ? rows.map((r, i) => `<div class="row" data-i="${i}">
+        <div class="name" title="${esc(r.label)}"><span class="rank">${i + 1}</span>${esc(r.label)}${r.sub ? ` <small>· ${esc(r.sub)}</small>` : ''}</div>
+        <div class="track"><div class="fill" style="width:${(r[metric] / max * 100).toFixed(1)}%;background:${COLOR[bucket]}"></div></div>
+        <div class="val">${fmt(r[metric])}${metric === 'watch_hours' ? ' h' : metric === 'avg_min' ? ' m' : ''}</div></div>`).join('')
+      : '<div class="hint">Nothing in this window.</div>';
+    el.querySelectorAll('.row').forEach(rowEl => {
+      const r = rows[+rowEl.dataset.i];
+      rowEl.querySelectorAll('div').forEach(c => {
+        c.onmousemove = e => showTip(e, `<b>${esc(r.label)}</b>${tipRows(r.tip)}`);
+        c.onmouseleave = hideTip;
+      });
+    });
+  }
+
+  function renderTop(w) {
+    const items = w.items;
+    // creator top videos
+    const m = state.creatorMetric;
+    const c = items.filter(i => i.bucket === 'creator').sort((a, b) => b[m] - a[m]).slice(0, 15);
+    bars($('#bars-creator'), c.map(i => ({ ...i, label: i.title, sub: i.show, tip: [
+      ['Creator', esc(i.show)], ['Watch hours', fmt(i.watch_hours)], ['Views', fmt(i.views)], ['Avg min / view', fmt(i.avg_min)]] })),
+      'creator', { metric: m });
+    // other top
+    const o = items.filter(i => i.bucket === 'other' && (state.otherType === 'All' || i.type === state.otherType))
+      .sort((a, b) => b.watch_hours - a.watch_hours).slice(0, 15);
+    bars($('#bars-other'), o.map(i => ({ ...i, label: i.title, sub: i.type === 'Film' ? 'Film' : i.show, tip: [
+      ['Type', i.type], ...(i.type !== 'Film' ? [['Show', esc(i.show)]] : []), ['Watch hours', fmt(i.watch_hours)], ['Views', fmt(i.views)], ['Avg min / view', fmt(i.avg_min)]] })),
+      'other');
+    // shows
+    const showRows = b => w.shows[b].slice(0, 12).map(s => ({ ...s, label: s.show, sub: b === 'other' ? (s.type === 'Means Original' ? 'Original' : s.type) : `${s.videos} video${s.videos > 1 ? 's' : ''}`,
+      tip: [['Videos in top 100', s.videos], ['Watch hours', fmt(s.watch_hours)], ['Views', fmt(s.views)], ['Avg min / view', fmt(s.views ? s.watch_hours * 60 / s.views : 0)]] }));
+    bars($('#shows-creator'), showRows('creator'), 'creator');
+    const mm = state.mmnMetric;
+    const mItems = items.filter(i => i.bucket === 'mmn');
+    bars($('#bars-mmn'), [...mItems].sort((a, b) => b[mm] - a[mm]).slice(0, 12).map(i => ({ ...i, label: i.title.replace(/^MMN Daily · /, ''), tip: [
+      ['Watch hours', fmt(i.watch_hours)], ['Views', fmt(i.views)], ['Avg min / view', fmt(i.avg_min)]] })), 'mmn', { metric: mm });
+    const mb = w.buckets.mmn, tot = sumB(w, 'watch_hours');
+    const best = [...mItems].sort((a, b) => b.watch_hours - a.watch_hours)[0];
+    const stat = (l, v, n = '') => `<div class="kpi" style="padding:10px 0;border-bottom:1px solid var(--grid)"><div class="label">${l}</div><div class="value" style="font-size:22px">${v}</div>${n ? `<div class="note">${n}</div>` : ''}</div>`;
+    $('#mmn-stats').innerHTML = mItems.length ? [
+      stat('Share of total watch hours', pct(mb.watch_hours / tot), `${fmt(mb.watch_hours)} of ${fmt(tot)} hrs`),
+      stat('Episodes in the top 100', mb.count, `${fmt(mb.views)} views total`),
+      stat('Average per episode', `${fmt(mb.watch_hours / mb.count)} hrs`, `${fmt(mb.views / mb.count)} views · ${fmt(mb.views ? mb.watch_hours * 60 / mb.views : 0)} min per view`),
+      stat('Best episode', esc(best.title.replace(/^MMN Daily · /, '')), `${fmt(best.watch_hours)} hrs · ${fmt(best.views)} views`),
+    ].join('') : '<div class="hint">No MMN Daily episodes in this window.</div>';
+    bars($('#shows-other'), showRows('other'), 'other');
+  }
+
+  function renderTable(w) {
+    const cols = [['rank', '#', 1], ['title', 'Title', 0], ['show', 'Creator / show', 0], ['type', 'Type', 0],
+                  ['watch_hours', 'Watch hrs', 1], ['views', 'Views', 1], ['avg_min', 'Avg min/view', 1]];
+    const ranked = [...w.items].sort((a, b) => b.watch_hours - a.watch_hours).map((r, i) => ({ ...r, rank: i + 1 }));
+    const q = state.q.toLowerCase();
+    let rows = ranked.filter(r => (state.bucket === 'All' || r.bucket === state.bucket) &&
+      (!q || r.title.toLowerCase().includes(q) || r.show.toLowerCase().includes(q)));
+    const k = state.sort;
+    rows.sort((a, b) => (typeof a[k] === 'string' ? a[k].localeCompare(b[k]) : a[k] - b[k]) * state.dir);
+    $('#tbl thead').innerHTML = '<tr>' + cols.map(([key, l, num]) =>
+      `<th class="${num ? 'num' : ''}" data-k="${key}" aria-sort="${state.sort === key ? (state.dir > 0 ? 'ascending' : 'descending') : 'none'}">${l}${state.sort === key ? (state.dir > 0 ? ' ↑' : ' ↓') : ''}</th>`).join('') + '</tr>';
+    $('#tbl tbody').innerHTML = rows.map(r => `<tr>
+      <td class="num">${r.rank}</td><td>${esc(r.title)}</td><td>${esc(r.type === 'Film' ? '—' : r.show)}</td>
+      <td><span class="tag"><span class="swatch" style="background:${COLOR[r.bucket]}"></span>${r.bucket === 'mmn' ? 'MMN Daily' : r.type}</span></td>
+      <td class="num">${fmt(r.watch_hours)}</td><td class="num">${fmt(r.views)}</td><td class="num">${fmt(r.avg_min)}</td></tr>`).join('');
+    $('#tbl thead').querySelectorAll('th').forEach(th => th.onclick = () => {
+      const key = th.dataset.k;
+      state.dir = state.sort === key ? -state.dir : (['title', 'show', 'type', 'rank'].includes(key) ? 1 : -1);
+      state.sort = key; renderTable(SNAPS[state.snap].windows[state.win]);
+    });
+  }
+
+  function chips(el, options, key, labels = {}) {
+    el.innerHTML = options.map(o => `<button aria-pressed="${state[key] === o}" data-v="${o}">${labels[o] || o}</button>`).join('');
+    el.querySelectorAll('button').forEach(b => b.onclick = () => { state[key] = b.dataset.v; render(); });
+  }
+
+  function render() {
+    if (!SNAPS.length) { document.body.innerHTML = '<p style="padding:40px">No data yet.</p>'; return; }
+    const snap = SNAPS[state.snap], w = snap.windows[state.win];
+    $('#subtitle').textContent = `Snapshot ${snap.date} · ${state.win === '7d' ? 'trailing 7 days' : 'trailing 30 days'} · Uscreen analytics`;
+    document.querySelectorAll('.seg button').forEach(b => b.setAttribute('aria-pressed', b.dataset.win === state.win));
+    const types = ['All', ...['Means Original', 'Film', 'Series', 'Unmatched'].filter(t => w.buckets.other.by_type[t])];
+    if (!types.includes(state.otherType)) state.otherType = 'All';
+    chips($('#type-filter'), types, 'otherType', { 'Means Original': 'Originals', Film: 'Films' });
+    chips($('#metric-c'), Object.keys(METRICS), 'creatorMetric', METRICS);
+    chips($('#metric-m'), Object.keys(METRICS), 'mmnMetric', METRICS);
+    chips($('#bucket-filter'), ['All', 'creator', 'other', 'mmn'], 'bucket', { creator: 'Creator videos', other: 'Films & series', mmn: 'MMN Daily' });
+    renderKpis(snap, w); renderSplit(w); renderTop(w); renderTable(w); renderPush(snap);
+    $('#foot').innerHTML = `<b>How to read this.</b> Data is Uscreen's top 100 videos by watch time for each window (it's batch-synced, so the last day or so may be incomplete).
+      Totals are for those 100 videos, not the whole catalog. "Avg min/view" = watch time ÷ views, a rough engagement signal (long videos naturally score higher).
+      Creator videos are titles whose "| Name" suffix matches a collection in the CREATORS category; MMN Daily is tracked as its own group; By Any Means, Miss Me Yet and other Means TV Originals sit with films &amp; series.
+      Subscriber and MRR figures are this month vs prior month as reported by Uscreen. Classification rules live in <code>config/classification.json</code>.`;
+  }
+
+
+  // --- new titles that need a push (snapshot-level, independent of the 7/30-day toggle)
+  state.pushView = 'push'; state.hideSeasonal = true;
+  function pushRows(snap) {
+    const nt = snap.new_titles; if (!nt) return [];
+    return nt.titles.filter(r => (state.pushView === 'all' || r.needs_push) &&
+      !(state.hideSeasonal && /collection \(Halloween\)/.test(r.note || '')));
+  }
+  function renderPush(snap) {
+    const card = $('#push-card'), nt = snap.new_titles;
+    if (!nt) { card.style.display = 'none'; return; }
+    card.style.display = '';
+    const rows = pushRows(snap), med = nt.median_views_per_week;
+    const maxV = Math.max(med * 2, ...rows.map(r => r.views_per_week), 1);
+    $('#push-hint').innerHTML = `Films and non-creator series added since ${nt.cutoff} (creator videos and MMN Daily excluded), slowest first. ` +
+      `Scored on <b>views per week since added</b> so a title added last week is compared fairly with one added in August. ` +
+      `A typical new title gets <b>${fmt(med)}</b> views a week (the black tick). "Needs a push" = below that, or no views in the last week. This section uses the full snapshot and ignores the 7/30-day toggle.`;
+    const pool = nt.titles.filter(r => !(state.hideSeasonal && /collection \(Halloween\)/.test(r.note || '')));
+    chips($('#push-filter'), ['push', 'all'], 'pushView', { push: `Needs a push (${pool.filter(r => r.needs_push).length})`, all: `All new titles (${pool.length})` });
+    const cols = ['Title', 'Type', 'Added', 'vs typical', 'Views / week', 'Watch hrs / week', 'Total views', 'Avg min/view', 'Watched', 'Views last 7d', 'Flags'];
+    const nums = new Set([4, 5, 6, 7, 8, 9]);
+    $('#push-tbl thead').innerHTML = '<tr>' + cols.map((c, i) => `<th class="${nums.has(i) ? 'num' : ''}" style="cursor:default">${c}</th>`).join('') + '</tr>';
+    const flagCls = f => f === 'Not in catalog' ? 'pill hidden' : (/below|No views|quiet/i.test(f) ? 'pill warn' : 'pill');
+    $('#push-tbl tbody').innerHTML = rows.length ? rows.map(r => `<tr>
+      <td>${esc(r.title)}${r.show ? ` <small style="color:var(--text-muted)">· ${esc(r.show)}</small>` : ''}${r.note ? `<div style="color:var(--text-muted);font-size:12px">${esc(r.note)}</div>` : ''}</td>
+      <td>${r.type === 'Means Original' ? 'Original' : r.type}</td>
+      <td style="white-space:nowrap">${r.added} <small style="color:var(--text-muted)">(${r.days_live}d)</small></td>
+      <td><span class="mini" title="Black tick = typical new title"><span class="f" style="width:${Math.min(r.views_per_week / maxV, 1) * 100}%"></span><span class="m" style="left:${med / maxV * 100}%"></span></span></td>
+      <td class="num">${fmt(r.views_per_week)}</td>
+      <td class="num">${fmt(r.hours_per_week)}</td><td class="num">${fmt(r.views)}</td><td class="num">${fmt(r.avg_min)}</td>
+      <td class="num">${r.completion == null ? '—' : Math.round(Math.min(r.completion, 1) * 100) + '%'}</td>
+      <td class="num">${fmt(r.views_7d)}</td>
+      <td>${r.flags.map(f => `<span class="${flagCls(f)}">${f}</span>`).join('') || '<span class="pill">On track</span>'}</td></tr>`).join('')
+      : '<tr><td colspan="11" class="hint">Nothing to flag.</td></tr>';
+  }
+  $('#hide-seasonal').onchange = e => { state.hideSeasonal = e.target.checked; renderPush(SNAPS[state.snap]); };
+  $('#copy-push').onclick = async () => {
+    const snap = SNAPS[state.snap], rows = pushRows(snap);
+    const text = `New titles that need a push (Means TV, snapshot ${snap.date})\n` + rows.map(r =>
+      `- ${r.title}${r.show ? ' (' + r.show + ')' : ''} | ${r.type} | added ${r.added} | ${fmt(r.views_per_week)} views/week, ${fmt(r.views)} total | ${r.flags.join(', ') || 'on track'}`).join('\n');
+    try { await navigator.clipboard.writeText(text); $('#copy-push').textContent = 'Copied ✓'; }
+    catch (e) { window.prompt('Copy this list:', text); }
+    setTimeout(() => $('#copy-push').textContent = 'Copy list for marketing', 1800);
+  };
+
+  // controls
+  const sel = $('#snap');
+  sel.innerHTML = SNAPS.map((s, i) => `<option value="${i}">${s.date}</option>`).reverse().join('');
+  sel.value = state.snap;
+  sel.onchange = () => { state.snap = +sel.value; render(); };
+  document.querySelectorAll('.seg button').forEach(b => b.onclick = () => { state.win = b.dataset.win; render(); });
+  $('#q').oninput = e => { state.q = e.target.value; renderTable(SNAPS[state.snap].windows[state.win]); };
+  render();
+})();
+</script>
+</body>
+</html>
