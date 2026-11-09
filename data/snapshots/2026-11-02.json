@@ -1,0 +1,2762 @@
+{
+ "date": "2026-11-02",
+ "store": null,
+ "windows": {
+  "30d": {
+   "days": 30,
+   "items": [
+    {
+     "id": 4406852,
+     "title": "MMN Daily · October 23, 2026",
+     "full_title": "October 23, 2026 | MMN Daily",
+     "show": "Means Morning News",
+     "bucket": "mmn",
+     "type": "Means Original",
+     "views": 446,
+     "watch_hours": 109.7,
+     "avg_min": 14.8
+    },
+    {
+     "id": 4419152,
+     "title": "MMN Daily · October 30, 2026",
+     "full_title": "October 30, 2026 | MMN Daily",
+     "show": "Means Morning News",
+     "bucket": "mmn",
+     "type": "Means Original",
+     "views": 371,
+     "watch_hours": 96.5,
+     "avg_min": 15.6
+    },
+    {
+     "id": 4393672,
+     "title": "MMN Daily · October 13, 2026",
+     "full_title": "October 13, 2026 | MMN Daily",
+     "show": "Means Morning News",
+     "bucket": "mmn",
+     "type": "Means Original",
+     "views": 402,
+     "watch_hours": 96.3,
+     "avg_min": 14.4
+    },
+    {
+     "id": 4385341,
+     "title": "MMN Daily · October 7, 2026",
+     "full_title": "October 7, 2026 | MMN Daily",
+     "show": "Means Morning News",
+     "bucket": "mmn",
+     "type": "Means Original",
+     "views": 364,
+     "watch_hours": 92.0,
+     "avg_min": 15.2
+    },
+    {
+     "id": 4376905,
+     "title": "Why are they trying to make you hate disabled people?",
+     "full_title": "Why are they trying to make you hate disabled people? | revolutionaryth0t",
+     "show": "revolutionaryth0t",
+     "bucket": "creator",
+     "type": "Creator",
+     "views": 280,
+     "watch_hours": 91.5,
+     "avg_min": 19.6
+    },
+    {
+     "id": 4402635,
+     "title": "MMN Daily · October 20, 2026",
+     "full_title": "October 20, 2026 | MMN Daily",
+     "show": "Means Morning News",
+     "bucket": "mmn",
+     "type": "Means Original",
+     "views": 382,
+     "watch_hours": 89.5,
+     "avg_min": 14.1
+    },
+    {
+     "id": 4416429,
+     "title": "MMN Daily · October 28, 2026",
+     "full_title": "October 28, 2026 | MMN Daily",
+     "show": "Means Morning News",
+     "bucket": "mmn",
+     "type": "Means Original",
+     "views": 351,
+     "watch_hours": 83.4,
+     "avg_min": 14.3
+    },
+    {
+     "id": 4388729,
+     "title": "MMN Daily · October 9, 2026",
+     "full_title": "October 9, 2026 | MMN Daily",
+     "show": "Means Morning News",
+     "bucket": "mmn",
+     "type": "Means Original",
+     "views": 358,
+     "watch_hours": 82.5,
+     "avg_min": 13.8
+    },
+    {
+     "id": 4405528,
+     "title": "MMN Daily · October 22, 2026",
+     "full_title": "October 22, 2026 | MMN Daily",
+     "show": "Means Morning News",
+     "bucket": "mmn",
+     "type": "Means Original",
+     "views": 337,
+     "watch_hours": 80.2,
+     "avg_min": 14.3
+    },
+    {
+     "id": 4404054,
+     "title": "MMN Daily · October 21, 2026",
+     "full_title": "October 21, 2026 | MMN Daily",
+     "show": "Means Morning News",
+     "bucket": "mmn",
+     "type": "Means Original",
+     "views": 331,
+     "watch_hours": 77.4,
+     "avg_min": 14.0
+    },
+    {
+     "id": 4396277,
+     "title": "Are Gen Z More Right Wing?",
+     "full_title": "Are Gen Z More Right Wing? | Moss Planet",
+     "show": "Moss Planet",
+     "bucket": "creator",
+     "type": "Creator",
+     "views": 196,
+     "watch_hours": 72.1,
+     "avg_min": 22.1
+    },
+    {
+     "id": 4387009,
+     "title": "MMN Daily · October 8, 2026",
+     "full_title": "October 8, 2026 | MMN Daily",
+     "show": "Means Morning News",
+     "bucket": "mmn",
+     "type": "Means Original",
+     "views": 338,
+     "watch_hours": 71.7,
+     "avg_min": 12.7
+    },
+    {
+     "id": 4412533,
+     "title": "Overzelous Zionism (Ft. Overzealots) - Episode 256",
+     "full_title": "Overzelous Zionism (Ft. Overzealots) - Episode 256 | The Deprogram",
+     "show": "The Deprogram",
+     "bucket": "creator",
+     "type": "Creator",
+     "views": 131,
+     "watch_hours": 68.5,
+     "avg_min": 31.4
+    },
+    {
+     "id": 4376868,
+     "title": "MMN Daily · October 2, 2026",
+     "full_title": "October 2, 2026 | MMN Daily",
+     "show": "Means Morning News",
+     "bucket": "mmn",
+     "type": "Means Original",
+     "views": 219,
+     "watch_hours": 67.0,
+     "avg_min": 18.3
+    },
+    {
+     "id": 4393989,
+     "title": "Neoliberalism is rotting your brain (and you're paying for it)",
+     "full_title": "Neoliberalism is rotting your brain (and you're paying for it) | revolutionaryth0t",
+     "show": "revolutionaryth0t",
+     "bucket": "creator",
+     "type": "Creator",
+     "views": 243,
+     "watch_hours": 66.3,
+     "avg_min": 16.4
+    },
+    {
+     "id": 4396701,
+     "title": "MMN Daily · October 15, 2026",
+     "full_title": "October 15, 2026 | MMN Daily",
+     "show": "Means Morning News",
+     "bucket": "mmn",
+     "type": "Means Original",
+     "views": 253,
+     "watch_hours": 58.8,
+     "avg_min": 13.9
+    },
+    {
+     "id": 4398335,
+     "title": "MMN Daily · October 16, 2026",
+     "full_title": "October 16, 2026 | MMN Daily",
+     "show": "Means Morning News",
+     "bucket": "mmn",
+     "type": "Means Original",
+     "views": 265,
+     "watch_hours": 55.7,
+     "avg_min": 12.6
+    },
+    {
+     "id": 4396266,
+     "title": "Tech Bros Don't Understand Sci-Fi",
+     "full_title": "Tech Bros Don't Understand Sci-Fi | Second Thought",
+     "show": "Second Thought",
+     "bucket": "creator",
+     "type": "Creator",
+     "views": 208,
+     "watch_hours": 49.8,
+     "avg_min": 14.4
+    },
+    {
+     "id": 4393983,
+     "title": "Why Democrats Refuse to Say \"Capitalism\"",
+     "full_title": "Why Democrats Refuse to Say \"Capitalism\" | NonCompete",
+     "show": "NonCompete",
+     "bucket": "creator",
+     "type": "Creator",
+     "views": 116,
+     "watch_hours": 48.2,
+     "avg_min": 24.9
+    },
+    {
+     "id": 4394717,
+     "title": "don't trust silicon valley about the apocalypse",
+     "full_title": "don't trust silicon valley about the apocalypse | Michael Burns",
+     "show": "Michael Burns",
+     "bucket": "creator",
+     "type": "Creator",
+     "views": 153,
+     "watch_hours": 48.2,
+     "avg_min": 18.9
+    },
+    {
+     "id": 4383529,
+     "title": "MMN Daily · October 6, 2026",
+     "full_title": "October 6, 2026 | MMN Daily",
+     "show": "Means Morning News",
+     "bucket": "mmn",
+     "type": "Means Original",
+     "views": 211,
+     "watch_hours": 44.3,
+     "avg_min": 12.6
+    },
+    {
+     "id": 4393992,
+     "title": "Why America Supports Israel: The Full Story",
+     "full_title": "Why America Supports Israel: The Full Story | 1Dime",
+     "show": "1Dime",
+     "bucket": "creator",
+     "type": "Creator",
+     "views": 49,
+     "watch_hours": 42.5,
+     "avg_min": 52.1
+    },
+    {
+     "id": 4376900,
+     "title": "Every War The United States Has Lost",
+     "full_title": "Every War The United States Has Lost | Hakim",
+     "show": "Hakim",
+     "bucket": "creator",
+     "type": "Creator",
+     "views": 171,
+     "watch_hours": 41.3,
+     "avg_min": 14.5
+    },
+    {
+     "id": 4414588,
+     "title": "MMN Daily · October 27, 2026",
+     "full_title": "October 27, 2026 | MMN Daily",
+     "show": "Means Morning News",
+     "bucket": "mmn",
+     "type": "Means Original",
+     "views": 174,
+     "watch_hours": 41.1,
+     "avg_min": 14.2
+    },
+    {
+     "id": 3157703,
+     "title": "Tantura (English CC)",
+     "full_title": "Tantura (English CC)",
+     "show": "Tantura (English CC)",
+     "bucket": "other",
+     "type": "Film",
+     "views": 68,
+     "watch_hours": 40.9,
+     "avg_min": 36.0
+    },
+    {
+     "id": 4395066,
+     "title": "MMN Daily · October 14, 2026",
+     "full_title": "October 14, 2026 | MMN Daily",
+     "show": "Means Morning News",
+     "bucket": "mmn",
+     "type": "Means Original",
+     "views": 181,
+     "watch_hours": 38.0,
+     "avg_min": 12.6
+    },
+    {
+     "id": 4286913,
+     "title": "Ticking Time Bomb: The Truth Behind Takata Airbag",
+     "full_title": "Ticking Time Bomb: The Truth Behind Takata Airbag",
+     "show": "Ticking Time Bomb: The Truth Behind Takata Airbag",
+     "bucket": "other",
+     "type": "Film",
+     "views": 55,
+     "watch_hours": 37.5,
+     "avg_min": 40.9
+    },
+    {
+     "id": 4367978,
+     "title": "Night of the Living Dead",
+     "full_title": "Night of the Living Dead",
+     "show": "Night of the Living Dead",
+     "bucket": "other",
+     "type": "Film",
+     "views": 44,
+     "watch_hours": 35.7,
+     "avg_min": 48.6
+    },
+    {
+     "id": 4404609,
+     "title": "Second Thought After Dark: Tech Bro Futurism",
+     "full_title": "Second Thought After Dark: Tech Bro Futurism | Second Thought",
+     "show": "Second Thought",
+     "bucket": "creator",
+     "type": "Creator",
+     "views": 175,
+     "watch_hours": 33.0,
+     "avg_min": 11.3
+    },
+    {
+     "id": 4286847,
+     "title": "Finding Fidel",
+     "full_title": "Finding Fidel",
+     "show": "Finding Fidel",
+     "bucket": "other",
+     "type": "Film",
+     "views": 22,
+     "watch_hours": 32.1,
+     "avg_min": 87.5
+    },
+    {
+     "id": 4367913,
+     "title": "Halloween",
+     "full_title": "Halloween",
+     "show": "Halloween",
+     "bucket": "other",
+     "type": "Film",
+     "views": 96,
+     "watch_hours": 32.0,
+     "avg_min": 20.0
+    },
+    {
+     "id": 4246772,
+     "title": "Cuba After Castro: The Island in the Crosshairs",
+     "full_title": "Cuba After Castro: The Island in the Crosshairs",
+     "show": "Cuba After Castro: The Island in the Crosshairs",
+     "bucket": "other",
+     "type": "Film",
+     "views": 55,
+     "watch_hours": 31.9,
+     "avg_min": 34.8
+    },
+    {
+     "id": 4325978,
+     "title": "The $100,000,000 War for the Environment (FULL SERIES)",
+     "full_title": "The $100,000,000 War for the Environment (FULL SERIES) | Our Changing Climate",
+     "show": "Our Changing Climate",
+     "bucket": "creator",
+     "type": "Creator",
+     "views": 53,
+     "watch_hours": 31.4,
+     "avg_min": 35.5
+    },
+    {
+     "id": 4374568,
+     "title": "Saddle Lake Cree Nation declares safe haven for gender-affirming care! September 2026",
+     "full_title": "Saddle Lake Cree Nation declares safe haven for gender-affirming care! September 2026 | Positive Leftist News",
+     "show": "Positive Leftist News",
+     "bucket": "creator",
+     "type": "Creator",
+     "views": 128,
+     "watch_hours": 29.2,
+     "avg_min": 13.7
+    },
+    {
+     "id": 4419229,
+     "title": "A.I. is a Weapon",
+     "full_title": "A.I. is a Weapon | By Any Means",
+     "show": "By Any Means",
+     "bucket": "other",
+     "type": "Means Original",
+     "views": 46,
+     "watch_hours": 28.9,
+     "avg_min": 37.8
+    },
+    {
+     "id": 4417783,
+     "title": "MMN Daily · October 29, 2026",
+     "full_title": "October 29, 2026 | MMN Daily",
+     "show": "Means Morning News",
+     "bucket": "mmn",
+     "type": "Means Original",
+     "views": 122,
+     "watch_hours": 28.4,
+     "avg_min": 14.0
+    },
+    {
+     "id": 4374349,
+     "title": "Will Data Centers Start a Revolution?",
+     "full_title": "Will Data Centers Start a Revolution? | Michael Burns",
+     "show": "Michael Burns",
+     "bucket": "creator",
+     "type": "Creator",
+     "views": 80,
+     "watch_hours": 27.1,
+     "avg_min": 20.3
+    },
+    {
+     "id": 4365698,
+     "title": "The $100,000,000 War for the Environment (Charlie's Commentary)",
+     "full_title": "The $100,000,000 War for the Environment (Charlie's Commentary) | Our Changing Climates",
+     "show": "Our Changing Climate",
+     "bucket": "creator",
+     "type": "Creator",
+     "views": 32,
+     "watch_hours": 26.9,
+     "avg_min": 50.4
+    },
+    {
+     "id": 4418321,
+     "title": "You're Paying For This",
+     "full_title": "You're Paying For This | Second Thought",
+     "show": "Second Thought",
+     "bucket": "creator",
+     "type": "Creator",
+     "views": 125,
+     "watch_hours": 26.4,
+     "avg_min": 12.7
+    },
+    {
+     "id": 4367975,
+     "title": "The Hobbit",
+     "full_title": "The Hobbit",
+     "show": "The Hobbit",
+     "bucket": "other",
+     "type": "Film",
+     "views": 58,
+     "watch_hours": 26.3,
+     "avg_min": 27.2
+    },
+    {
+     "id": 4367979,
+     "title": "Suspiria",
+     "full_title": "Suspiria",
+     "show": "Suspiria",
+     "bucket": "other",
+     "type": "Film",
+     "views": 49,
+     "watch_hours": 25.8,
+     "avg_min": 31.6
+    },
+    {
+     "id": 302806,
+     "title": "Gaza Fights for Freedom",
+     "full_title": "Gaza Fights for Freedom",
+     "show": "Gaza Fights for Freedom",
+     "bucket": "other",
+     "type": "Film",
+     "views": 74,
+     "watch_hours": 25.5,
+     "avg_min": 20.7
+    },
+    {
+     "id": 4412532,
+     "title": "Why Do Boomers Suck So Bad?",
+     "full_title": "Why Do Boomers Suck So Bad? | Hakim",
+     "show": "Hakim",
+     "bucket": "creator",
+     "type": "Creator",
+     "views": 111,
+     "watch_hours": 23.4,
+     "avg_min": 12.7
+    },
+    {
+     "id": 4402816,
+     "title": "The Hardest Lesson To Learn About The Black Panther Party",
+     "full_title": "The Hardest Lesson To Learn About The Black Panther Party | Prince Shakur",
+     "show": "Prince Shakur",
+     "bucket": "creator",
+     "type": "Creator",
+     "views": 116,
+     "watch_hours": 23.2,
+     "avg_min": 12.0
+    },
+    {
+     "id": 4412529,
+     "title": "Philosophy in Minecraft: Dialectics vs. Metaphysics!",
+     "full_title": "Philosophy in Minecraft: Dialectics vs. Metaphysics! | NonCompete",
+     "show": "NonCompete",
+     "bucket": "creator",
+     "type": "Creator",
+     "views": 72,
+     "watch_hours": 21.9,
+     "avg_min": 18.2
+    },
+    {
+     "id": 4355385,
+     "title": "Zedé",
+     "full_title": "Zedé | By Any Means",
+     "show": "By Any Means",
+     "bucket": "other",
+     "type": "Means Original",
+     "views": 57,
+     "watch_hours": 21.4,
+     "avg_min": 22.6
+    },
+    {
+     "id": 4375694,
+     "title": "MMN Daily · October 1, 2026",
+     "full_title": "October 1, 2026 | MMN Daily",
+     "show": "Means Morning News",
+     "bucket": "mmn",
+     "type": "Means Original",
+     "views": 68,
+     "watch_hours": 18.6,
+     "avg_min": 16.4
+    },
+    {
+     "id": 4374351,
+     "title": "The Revolutionary Viewpoint of Marxism - Marxist Theory 101",
+     "full_title": "The Revolutionary Viewpoint of Marxism - Marxist Theory 101 | Luna Oi!",
+     "show": "Luna Oi!",
+     "bucket": "creator",
+     "type": "Creator",
+     "views": 61,
+     "watch_hours": 18.5,
+     "avg_min": 18.2
+    },
+    {
+     "id": 4367982,
+     "title": "Nosferatu: A Symphony of Horror",
+     "full_title": "Nosferatu: A Symphony of Horror",
+     "show": "Nosferatu: A Symphony of Horror",
+     "bucket": "other",
+     "type": "Film",
+     "views": 24,
+     "watch_hours": 18.5,
+     "avg_min": 46.2
+    },
+    {
+     "id": 4401814,
+     "title": "After Volkswagen, Chattanooga Nurses Decide to Unionize",
+     "full_title": "After Volkswagen, Chattanooga Nurses Decide to Unionize | TVLR",
+     "show": "The Valley Labor Report",
+     "bucket": "creator",
+     "type": "Creator",
+     "views": 46,
+     "watch_hours": 18.3,
+     "avg_min": 23.9
+    },
+    {
+     "id": 4393997,
+     "title": "The Geopolitical Economy (Ft. ‪@RadDesai‬ ) - Episode 254",
+     "full_title": "The Geopolitical Economy (Ft. ‪@RadDesai‬ ) - Episode 254 | The Deprogram",
+     "show": "The Deprogram",
+     "bucket": "creator",
+     "type": "Creator",
+     "views": 31,
+     "watch_hours": 17.2,
+     "avg_min": 33.3
+    },
+    {
+     "id": 4365422,
+     "title": "Why We Need Socialism in 2026",
+     "full_title": "Why We Need Socialism in 2026 | Our Changing Climate",
+     "show": "Our Changing Climate",
+     "bucket": "creator",
+     "type": "Creator",
+     "views": 66,
+     "watch_hours": 16.7,
+     "avg_min": 15.2
+    },
+    {
+     "id": 4405026,
+     "title": "Are We Speedrunning the End of the World?",
+     "full_title": "Are We Speedrunning the End of the World? | Our Changing Climate",
+     "show": "Our Changing Climate",
+     "bucket": "creator",
+     "type": "Creator",
+     "views": 128,
+     "watch_hours": 16.4,
+     "avg_min": 7.7
+    },
+    {
+     "id": 1850130,
+     "title": "The Kill Team",
+     "full_title": "The Kill Team",
+     "show": "The Kill Team",
+     "bucket": "other",
+     "type": "Film",
+     "views": 33,
+     "watch_hours": 16.2,
+     "avg_min": 29.4
+    },
+    {
+     "id": 3882743,
+     "title": "UNION",
+     "full_title": "UNION",
+     "show": "UNION",
+     "bucket": "other",
+     "type": "Film",
+     "views": 22,
+     "watch_hours": 16.1,
+     "avg_min": 44.0
+    },
+    {
+     "id": 4376903,
+     "title": "Black Power Mixtape: An Unexpected Radical Classic",
+     "full_title": "Black Power Mixtape: An Unexpected Radical Classic | Prince Shakur",
+     "show": "Prince Shakur",
+     "bucket": "creator",
+     "type": "Creator",
+     "views": 57,
+     "watch_hours": 15.8,
+     "avg_min": 16.6
+    },
+    {
+     "id": 3550627,
+     "title": "Cane Fire",
+     "full_title": "Cane Fire",
+     "show": "Cane Fire",
+     "bucket": "other",
+     "type": "Film",
+     "views": 15,
+     "watch_hours": 15.6,
+     "avg_min": 62.6
+    },
+    {
+     "id": 4357798,
+     "title": "The Stock Market is Not What You Think It Is.",
+     "full_title": "The Stock Market is Not What You Think It Is. | NonCompete",
+     "show": "NonCompete",
+     "bucket": "creator",
+     "type": "Creator",
+     "views": 35,
+     "watch_hours": 15.1,
+     "avg_min": 25.9
+    },
+    {
+     "id": 3086491,
+     "title": "(English CC) Red Army / P.F.L.P: Declaration of World War",
+     "full_title": "(English CC) Red Army / P.F.L.P: Declaration of World War",
+     "show": "(English CC) Red Army / P.F.L.P: Declaration of World War",
+     "bucket": "other",
+     "type": "Film",
+     "views": 67,
+     "watch_hours": 14.6,
+     "avg_min": 13.1
+    },
+    {
+     "id": 4367429,
+     "title": "Autopsy Report: Lenin - Bonus Episode 19 UNLOCKED",
+     "full_title": "Autopsy Report: Lenin - Bonus Episode 19 UNLOCKED | The Deprogram",
+     "show": "The Deprogram",
+     "bucket": "creator",
+     "type": "Creator",
+     "views": 26,
+     "watch_hours": 14.6,
+     "avg_min": 33.6
+    },
+    {
+     "id": 4367974,
+     "title": "Witchcraft Through the Ages",
+     "full_title": "Witchcraft Through the Ages",
+     "show": "Witchcraft Through the Ages",
+     "bucket": "other",
+     "type": "Film",
+     "views": 27,
+     "watch_hours": 14.4,
+     "avg_min": 32.1
+    },
+    {
+     "id": 4405027,
+     "title": "What Is China's \"Ecological Civilization\"?",
+     "full_title": "What Is China's \"Ecological Civilization\"? | Our Changing Climate",
+     "show": "Our Changing Climate",
+     "bucket": "creator",
+     "type": "Creator",
+     "views": 158,
+     "watch_hours": 14.1,
+     "avg_min": 5.4
+    },
+    {
+     "id": 1776715,
+     "title": "Worlds of Ursula K. Le Guin",
+     "full_title": "Worlds of Ursula K. Le Guin",
+     "show": "Worlds of Ursula K. Le Guin",
+     "bucket": "other",
+     "type": "Film",
+     "views": 32,
+     "watch_hours": 13.9,
+     "avg_min": 26.1
+    },
+    {
+     "id": 4286844,
+     "title": "Disaster Capitalism",
+     "full_title": "Disaster Capitalism",
+     "show": "Disaster Capitalism",
+     "bucket": "other",
+     "type": "Film",
+     "views": 31,
+     "watch_hours": 13.2,
+     "avg_min": 25.6
+    },
+    {
+     "id": 2082426,
+     "title": "Revolution Selfie: The Red Battalion",
+     "full_title": "Revolution Selfie: The Red Battalion",
+     "show": "Revolution Selfie: The Red Battalion",
+     "bucket": "other",
+     "type": "Film",
+     "views": 19,
+     "watch_hours": 12.9,
+     "avg_min": 40.6
+    },
+    {
+     "id": 4367972,
+     "title": "The Wasp Woman",
+     "full_title": "The Wasp Woman",
+     "show": "The Wasp Woman",
+     "bucket": "other",
+     "type": "Film",
+     "views": 21,
+     "watch_hours": 12.9,
+     "avg_min": 36.7
+    },
+    {
+     "id": 4365439,
+     "title": "How Did It Get This Bad?",
+     "full_title": "How Did It Get This Bad? | Second Thought",
+     "show": "Second Thought",
+     "bucket": "creator",
+     "type": "Creator",
+     "views": 100,
+     "watch_hours": 12.7,
+     "avg_min": 7.6
+    },
+    {
+     "id": 806836,
+     "title": "Fraud",
+     "full_title": "Fraud",
+     "show": "Fraud",
+     "bucket": "other",
+     "type": "Film",
+     "views": 18,
+     "watch_hours": 12.5,
+     "avg_min": 41.6
+    },
+    {
+     "id": 4286896,
+     "title": "Nocturama",
+     "full_title": "Nocturama",
+     "show": "Nocturama",
+     "bucket": "other",
+     "type": "Film",
+     "views": 22,
+     "watch_hours": 12.2,
+     "avg_min": 33.3
+    },
+    {
+     "id": 4283612,
+     "title": "Build an Army?",
+     "full_title": "Build an Army? | By Any Means",
+     "show": "By Any Means",
+     "bucket": "other",
+     "type": "Means Original",
+     "views": 27,
+     "watch_hours": 11.9,
+     "avg_min": 26.4
+    },
+    {
+     "id": 4366856,
+     "title": "MMN Daily · September 25, 2026",
+     "full_title": "September 25, 2026 | MMN Daily",
+     "show": "Means Morning News",
+     "bucket": "mmn",
+     "type": "Means Original",
+     "views": 68,
+     "watch_hours": 11.7,
+     "avg_min": 10.3
+    },
+    {
+     "id": 4372264,
+     "title": "MMN Daily · September 29, 2026",
+     "full_title": "September 29, 2026 | MMN Daily",
+     "show": "Means Morning News",
+     "bucket": "mmn",
+     "type": "Means Original",
+     "views": 34,
+     "watch_hours": 11.1,
+     "avg_min": 19.5
+    },
+    {
+     "id": 4367912,
+     "title": "Fortress of the Dead",
+     "full_title": "Fortress of the Dead",
+     "show": "Fortress of the Dead",
+     "bucket": "other",
+     "type": "Film",
+     "views": 20,
+     "watch_hours": 10.4,
+     "avg_min": 31.1
+    },
+    {
+     "id": 4373989,
+     "title": "MMN Daily · September 30, 2026",
+     "full_title": "September 30, 2026 | MMN Daily",
+     "show": "Means Morning News",
+     "bucket": "mmn",
+     "type": "Means Original",
+     "views": 40,
+     "watch_hours": 10.3,
+     "avg_min": 15.5
+    },
+    {
+     "id": 2577635,
+     "title": "Ep2: 2001",
+     "full_title": "Ep2: 2001 | Miss Me Yet",
+     "show": "Miss Me Yet",
+     "bucket": "other",
+     "type": "Means Original",
+     "views": 39,
+     "watch_hours": 10.2,
+     "avg_min": 15.7
+    },
+    {
+     "id": 3914905,
+     "title": "PIZZAGATE: A Deep Dish (UNSLICED & UNCENSORED)",
+     "full_title": "PIZZAGATE: A Deep Dish (UNSLICED & UNCENSORED) | Chill Goblin",
+     "show": "Chill Goblin",
+     "bucket": "creator",
+     "type": "Creator",
+     "views": 8,
+     "watch_hours": 10.0,
+     "avg_min": 75.2
+    },
+    {
+     "id": 4310574,
+     "title": "The Origins of Marxist Philosophy - Marxist Theory 101",
+     "full_title": "The Origins of Marxist Philosophy - Marxist Theory 101 | Luna Oi!",
+     "show": "Luna Oi!",
+     "bucket": "creator",
+     "type": "Creator",
+     "views": 32,
+     "watch_hours": 9.9,
+     "avg_min": 18.6
+    },
+    {
+     "id": 4330398,
+     "title": "What Does It Mean To Be A Marxist? (Deprogram Rectification Movement) - Episode 249",
+     "full_title": "What Does It Mean To Be A Marxist? (Deprogram Rectification Movement) - Episode 249 | The Deprogram",
+     "show": "The Deprogram",
+     "bucket": "creator",
+     "type": "Creator",
+     "views": 8,
+     "watch_hours": 9.9,
+     "avg_min": 74.2
+    },
+    {
+     "id": 4367919,
+     "title": "The Driller Killer",
+     "full_title": "The Driller Killer",
+     "show": "The Driller Killer",
+     "bucket": "other",
+     "type": "Film",
+     "views": 14,
+     "watch_hours": 9.9,
+     "avg_min": 42.4
+    },
+    {
+     "id": 2577634,
+     "title": "Ep1: 2000",
+     "full_title": "Ep1: 2000 | Miss Me Yet",
+     "show": "Miss Me Yet",
+     "bucket": "other",
+     "type": "Means Original",
+     "views": 61,
+     "watch_hours": 9.8,
+     "avg_min": 9.6
+    },
+    {
+     "id": 4393984,
+     "title": "The Baldwin Conversation We're Afraid To Have",
+     "full_title": "The Baldwin Conversation We're Afraid To Have | Prince Shakur",
+     "show": "Prince Shakur",
+     "bucket": "creator",
+     "type": "Creator",
+     "views": 44,
+     "watch_hours": 9.2,
+     "avg_min": 12.5
+    },
+    {
+     "id": 1100130,
+     "title": "Not Even A Show",
+     "full_title": "Not Even A Show",
+     "show": "Not Even A Show",
+     "bucket": "other",
+     "type": "Series",
+     "views": 20,
+     "watch_hours": 8.8,
+     "avg_min": 26.4
+    },
+    {
+     "id": 4353177,
+     "title": "Second Thought After Dark: Dictatorship of the Bourgeoisie",
+     "full_title": "Second Thought After Dark: Dictatorship of the Bourgeoisie | Second Thought",
+     "show": "Second Thought",
+     "bucket": "creator",
+     "type": "Creator",
+     "views": 55,
+     "watch_hours": 8.7,
+     "avg_min": 9.5
+    },
+    {
+     "id": 4376901,
+     "title": "The Brutal Truth Behind CHE: Part 2",
+     "full_title": "The Brutal Truth Behind CHE: Part 2 | Prince Shakur",
+     "show": "Prince Shakur",
+     "bucket": "creator",
+     "type": "Creator",
+     "views": 53,
+     "watch_hours": 8.6,
+     "avg_min": 9.7
+    },
+    {
+     "id": 4286877,
+     "title": "Devil Put the Coal in the Ground",
+     "full_title": "Devil Put the Coal in the Ground",
+     "show": "Devil Put the Coal in the Ground",
+     "bucket": "other",
+     "type": "Film",
+     "views": 20,
+     "watch_hours": 8.4,
+     "avg_min": 25.1
+    },
+    {
+     "id": 3894343,
+     "title": "Episode 2: The Wealth of Nations: A New Gospel?",
+     "full_title": "Episode 2: The Wealth of Nations: A New Gospel?",
+     "show": "CAPITALISM (6-part series)",
+     "bucket": "other",
+     "type": "Series",
+     "views": 13,
+     "watch_hours": 8.3,
+     "avg_min": 38.3
+    },
+    {
+     "id": 3894495,
+     "title": "Episode 1: Adam Smith, The Birth of the Free Market",
+     "full_title": "Episode 1: Adam Smith, The Birth of the Free Market",
+     "show": "CAPITALISM (6-part series)",
+     "bucket": "other",
+     "type": "Series",
+     "views": 24,
+     "watch_hours": 8.2,
+     "avg_min": 20.5
+    },
+    {
+     "id": 4344643,
+     "title": "Battle Of Blaire Mountain - Episode 251",
+     "full_title": "Battle Of Blaire Mountain - Episode 251 | The Deprogram",
+     "show": "The Deprogram",
+     "bucket": "creator",
+     "type": "Creator",
+     "views": 9,
+     "watch_hours": 7.2,
+     "avg_min": 48.1
+    },
+    {
+     "id": 4286868,
+     "title": "Nomad: In the Footsteps of Bruce Chatwin",
+     "full_title": "Nomad: In the Footsteps of Bruce Chatwin",
+     "show": "Nomad: In the Footsteps of Bruce Chatwin",
+     "bucket": "other",
+     "type": "Film",
+     "views": 14,
+     "watch_hours": 6.4,
+     "avg_min": 27.4
+    },
+    {
+     "id": 4286850,
+     "title": "Hawaii: The Stolen Paradise",
+     "full_title": "Hawaii: The Stolen Paradise",
+     "show": "Hawaii: The Stolen Paradise",
+     "bucket": "other",
+     "type": "Film",
+     "views": 8,
+     "watch_hours": 4.3,
+     "avg_min": 32.6
+    },
+    {
+     "id": 4418073,
+     "title": "My Man Godfrey",
+     "full_title": "My Man Godfrey",
+     "show": "My Man Godfrey",
+     "bucket": "other",
+     "type": "Film",
+     "views": 3,
+     "watch_hours": 1.6,
+     "avg_min": 32.6
+    }
+   ],
+   "buckets": {
+    "creator": {
+     "count": 35,
+     "views": 3356,
+     "watch_hours": 993.8,
+     "by_type": {
+      "Creator": {
+       "views": 3356,
+       "watch_hours": 993.8,
+       "count": 35
+      }
+     }
+    },
+    "other": {
+     "count": 35,
+     "views": 1218,
+     "watch_hours": 609.2,
+     "by_type": {
+      "Film": {
+       "views": 931,
+       "watch_hours": 501.7,
+       "count": 27
+      },
+      "Means Original": {
+       "views": 230,
+       "watch_hours": 82.2,
+       "count": 5
+      },
+      "Series": {
+       "views": 57,
+       "watch_hours": 25.3,
+       "count": 3
+      }
+     }
+    },
+    "mmn": {
+     "count": 21,
+     "views": 5315,
+     "watch_hours": 1264.2,
+     "by_type": {
+      "Means Original": {
+       "views": 5315,
+       "watch_hours": 1264.2,
+       "count": 21
+      }
+     }
+    }
+   },
+   "shows": {
+    "creator": [
+     {
+      "show": "revolutionaryth0t",
+      "type": "Creator",
+      "views": 523,
+      "watch_hours": 157.8,
+      "videos": 2
+     },
+     {
+      "show": "Second Thought",
+      "type": "Creator",
+      "views": 663,
+      "watch_hours": 130.6,
+      "videos": 5
+     },
+     {
+      "show": "The Deprogram",
+      "type": "Creator",
+      "views": 205,
+      "watch_hours": 117.4,
+      "videos": 5
+     },
+     {
+      "show": "Our Changing Climate",
+      "type": "Creator",
+      "views": 437,
+      "watch_hours": 105.5,
+      "videos": 5
+     },
+     {
+      "show": "NonCompete",
+      "type": "Creator",
+      "views": 223,
+      "watch_hours": 85.2,
+      "videos": 3
+     },
+     {
+      "show": "Michael Burns",
+      "type": "Creator",
+      "views": 233,
+      "watch_hours": 75.3,
+      "videos": 2
+     },
+     {
+      "show": "Moss Planet",
+      "type": "Creator",
+      "views": 196,
+      "watch_hours": 72.1,
+      "videos": 1
+     },
+     {
+      "show": "Hakim",
+      "type": "Creator",
+      "views": 282,
+      "watch_hours": 64.7,
+      "videos": 2
+     },
+     {
+      "show": "Prince Shakur",
+      "type": "Creator",
+      "views": 270,
+      "watch_hours": 56.8,
+      "videos": 4
+     },
+     {
+      "show": "1Dime",
+      "type": "Creator",
+      "views": 49,
+      "watch_hours": 42.5,
+      "videos": 1
+     },
+     {
+      "show": "Positive Leftist News",
+      "type": "Creator",
+      "views": 128,
+      "watch_hours": 29.2,
+      "videos": 1
+     },
+     {
+      "show": "Luna Oi!",
+      "type": "Creator",
+      "views": 93,
+      "watch_hours": 28.4,
+      "videos": 2
+     },
+     {
+      "show": "The Valley Labor Report",
+      "type": "Creator",
+      "views": 46,
+      "watch_hours": 18.3,
+      "videos": 1
+     },
+     {
+      "show": "Chill Goblin",
+      "type": "Creator",
+      "views": 8,
+      "watch_hours": 10.0,
+      "videos": 1
+     }
+    ],
+    "other": [
+     {
+      "show": "By Any Means",
+      "type": "Means Original",
+      "views": 130,
+      "watch_hours": 62.2,
+      "videos": 3
+     },
+     {
+      "show": "Tantura (English CC)",
+      "type": "Film",
+      "views": 68,
+      "watch_hours": 40.9,
+      "videos": 1
+     },
+     {
+      "show": "Ticking Time Bomb: The Truth Behind Takata Airbag",
+      "type": "Film",
+      "views": 55,
+      "watch_hours": 37.5,
+      "videos": 1
+     },
+     {
+      "show": "Night of the Living Dead",
+      "type": "Film",
+      "views": 44,
+      "watch_hours": 35.7,
+      "videos": 1
+     },
+     {
+      "show": "Finding Fidel",
+      "type": "Film",
+      "views": 22,
+      "watch_hours": 32.1,
+      "videos": 1
+     },
+     {
+      "show": "Halloween",
+      "type": "Film",
+      "views": 96,
+      "watch_hours": 32.0,
+      "videos": 1
+     },
+     {
+      "show": "Cuba After Castro: The Island in the Crosshairs",
+      "type": "Film",
+      "views": 55,
+      "watch_hours": 31.9,
+      "videos": 1
+     },
+     {
+      "show": "The Hobbit",
+      "type": "Film",
+      "views": 58,
+      "watch_hours": 26.3,
+      "videos": 1
+     },
+     {
+      "show": "Suspiria",
+      "type": "Film",
+      "views": 49,
+      "watch_hours": 25.8,
+      "videos": 1
+     },
+     {
+      "show": "Gaza Fights for Freedom",
+      "type": "Film",
+      "views": 74,
+      "watch_hours": 25.5,
+      "videos": 1
+     },
+     {
+      "show": "Miss Me Yet",
+      "type": "Means Original",
+      "views": 100,
+      "watch_hours": 20.0,
+      "videos": 2
+     },
+     {
+      "show": "Nosferatu: A Symphony of Horror",
+      "type": "Film",
+      "views": 24,
+      "watch_hours": 18.5,
+      "videos": 1
+     },
+     {
+      "show": "CAPITALISM (6-part series)",
+      "type": "Series",
+      "views": 37,
+      "watch_hours": 16.5,
+      "videos": 2
+     },
+     {
+      "show": "The Kill Team",
+      "type": "Film",
+      "views": 33,
+      "watch_hours": 16.2,
+      "videos": 1
+     },
+     {
+      "show": "UNION",
+      "type": "Film",
+      "views": 22,
+      "watch_hours": 16.1,
+      "videos": 1
+     },
+     {
+      "show": "Cane Fire",
+      "type": "Film",
+      "views": 15,
+      "watch_hours": 15.6,
+      "videos": 1
+     },
+     {
+      "show": "(English CC) Red Army / P.F.L.P: Declaration of World War",
+      "type": "Film",
+      "views": 67,
+      "watch_hours": 14.6,
+      "videos": 1
+     },
+     {
+      "show": "Witchcraft Through the Ages",
+      "type": "Film",
+      "views": 27,
+      "watch_hours": 14.4,
+      "videos": 1
+     },
+     {
+      "show": "Worlds of Ursula K. Le Guin",
+      "type": "Film",
+      "views": 32,
+      "watch_hours": 13.9,
+      "videos": 1
+     },
+     {
+      "show": "Disaster Capitalism",
+      "type": "Film",
+      "views": 31,
+      "watch_hours": 13.2,
+      "videos": 1
+     },
+     {
+      "show": "Revolution Selfie: The Red Battalion",
+      "type": "Film",
+      "views": 19,
+      "watch_hours": 12.9,
+      "videos": 1
+     },
+     {
+      "show": "The Wasp Woman",
+      "type": "Film",
+      "views": 21,
+      "watch_hours": 12.9,
+      "videos": 1
+     },
+     {
+      "show": "Fraud",
+      "type": "Film",
+      "views": 18,
+      "watch_hours": 12.5,
+      "videos": 1
+     },
+     {
+      "show": "Nocturama",
+      "type": "Film",
+      "views": 22,
+      "watch_hours": 12.2,
+      "videos": 1
+     },
+     {
+      "show": "Fortress of the Dead",
+      "type": "Film",
+      "views": 20,
+      "watch_hours": 10.4,
+      "videos": 1
+     },
+     {
+      "show": "The Driller Killer",
+      "type": "Film",
+      "views": 14,
+      "watch_hours": 9.9,
+      "videos": 1
+     },
+     {
+      "show": "Not Even A Show",
+      "type": "Series",
+      "views": 20,
+      "watch_hours": 8.8,
+      "videos": 1
+     },
+     {
+      "show": "Devil Put the Coal in the Ground",
+      "type": "Film",
+      "views": 20,
+      "watch_hours": 8.4,
+      "videos": 1
+     },
+     {
+      "show": "Nomad: In the Footsteps of Bruce Chatwin",
+      "type": "Film",
+      "views": 14,
+      "watch_hours": 6.4,
+      "videos": 1
+     },
+     {
+      "show": "Hawaii: The Stolen Paradise",
+      "type": "Film",
+      "views": 8,
+      "watch_hours": 4.3,
+      "videos": 1
+     },
+     {
+      "show": "My Man Godfrey",
+      "type": "Film",
+      "views": 3,
+      "watch_hours": 1.6,
+      "videos": 1
+     }
+    ],
+    "mmn": [
+     {
+      "show": "Means Morning News",
+      "type": "Means Original",
+      "views": 5315,
+      "watch_hours": 1264.2,
+      "videos": 21
+     }
+    ]
+   },
+   "top50": {
+    "creator": 807.7,
+    "other": 356.5,
+    "mmn": 1231.1
+   }
+  },
+  "7d": {
+   "days": 7,
+   "items": [
+    {
+     "id": 4419152,
+     "title": "MMN Daily · October 30, 2026",
+     "full_title": "October 30, 2026 | MMN Daily",
+     "show": "Means Morning News",
+     "bucket": "mmn",
+     "type": "Means Original",
+     "views": 371,
+     "watch_hours": 96.5,
+     "avg_min": 15.6
+    },
+    {
+     "id": 4416429,
+     "title": "MMN Daily · October 28, 2026",
+     "full_title": "October 28, 2026 | MMN Daily",
+     "show": "Means Morning News",
+     "bucket": "mmn",
+     "type": "Means Original",
+     "views": 351,
+     "watch_hours": 83.4,
+     "avg_min": 14.3
+    },
+    {
+     "id": 4412533,
+     "title": "Overzelous Zionism (Ft. Overzealots) - Episode 256",
+     "full_title": "Overzelous Zionism (Ft. Overzealots) - Episode 256 | The Deprogram",
+     "show": "The Deprogram",
+     "bucket": "creator",
+     "type": "Creator",
+     "views": 131,
+     "watch_hours": 68.5,
+     "avg_min": 31.4
+    },
+    {
+     "id": 4414588,
+     "title": "MMN Daily · October 27, 2026",
+     "full_title": "October 27, 2026 | MMN Daily",
+     "show": "Means Morning News",
+     "bucket": "mmn",
+     "type": "Means Original",
+     "views": 174,
+     "watch_hours": 41.1,
+     "avg_min": 14.2
+    },
+    {
+     "id": 4419229,
+     "title": "A.I. is a Weapon",
+     "full_title": "A.I. is a Weapon | By Any Means",
+     "show": "By Any Means",
+     "bucket": "other",
+     "type": "Means Original",
+     "views": 46,
+     "watch_hours": 28.9,
+     "avg_min": 37.8
+    },
+    {
+     "id": 4406852,
+     "title": "MMN Daily · October 23, 2026",
+     "full_title": "October 23, 2026 | MMN Daily",
+     "show": "Means Morning News",
+     "bucket": "mmn",
+     "type": "Means Original",
+     "views": 133,
+     "watch_hours": 28.6,
+     "avg_min": 12.9
+    },
+    {
+     "id": 4417783,
+     "title": "MMN Daily · October 29, 2026",
+     "full_title": "October 29, 2026 | MMN Daily",
+     "show": "Means Morning News",
+     "bucket": "mmn",
+     "type": "Means Original",
+     "views": 122,
+     "watch_hours": 28.4,
+     "avg_min": 14.0
+    },
+    {
+     "id": 4418321,
+     "title": "You're Paying For This",
+     "full_title": "You're Paying For This | Second Thought",
+     "show": "Second Thought",
+     "bucket": "creator",
+     "type": "Creator",
+     "views": 125,
+     "watch_hours": 26.4,
+     "avg_min": 12.7
+    },
+    {
+     "id": 4412532,
+     "title": "Why Do Boomers Suck So Bad?",
+     "full_title": "Why Do Boomers Suck So Bad? | Hakim",
+     "show": "Hakim",
+     "bucket": "creator",
+     "type": "Creator",
+     "views": 111,
+     "watch_hours": 23.4,
+     "avg_min": 12.7
+    },
+    {
+     "id": 4412529,
+     "title": "Philosophy in Minecraft: Dialectics vs. Metaphysics!",
+     "full_title": "Philosophy in Minecraft: Dialectics vs. Metaphysics! | NonCompete",
+     "show": "NonCompete",
+     "bucket": "creator",
+     "type": "Creator",
+     "views": 72,
+     "watch_hours": 21.9,
+     "avg_min": 18.2
+    },
+    {
+     "id": 4396277,
+     "title": "Are Gen Z More Right Wing?",
+     "full_title": "Are Gen Z More Right Wing? | Moss Planet",
+     "show": "Moss Planet",
+     "bucket": "creator",
+     "type": "Creator",
+     "views": 27,
+     "watch_hours": 13.9,
+     "avg_min": 30.8
+    },
+    {
+     "id": 4367978,
+     "title": "Night of the Living Dead",
+     "full_title": "Night of the Living Dead",
+     "show": "Night of the Living Dead",
+     "bucket": "other",
+     "type": "Film",
+     "views": 17,
+     "watch_hours": 12.9,
+     "avg_min": 45.7
+    },
+    {
+     "id": 4404609,
+     "title": "Second Thought After Dark: Tech Bro Futurism",
+     "full_title": "Second Thought After Dark: Tech Bro Futurism | Second Thought",
+     "show": "Second Thought",
+     "bucket": "creator",
+     "type": "Creator",
+     "views": 59,
+     "watch_hours": 11.4,
+     "avg_min": 11.6
+    },
+    {
+     "id": 4405528,
+     "title": "MMN Daily · October 22, 2026",
+     "full_title": "October 22, 2026 | MMN Daily",
+     "show": "Means Morning News",
+     "bucket": "mmn",
+     "type": "Means Original",
+     "views": 54,
+     "watch_hours": 11.1,
+     "avg_min": 12.4
+    },
+    {
+     "id": 4246772,
+     "title": "Cuba After Castro: The Island in the Crosshairs",
+     "full_title": "Cuba After Castro: The Island in the Crosshairs",
+     "show": "Cuba After Castro: The Island in the Crosshairs",
+     "bucket": "other",
+     "type": "Film",
+     "views": 18,
+     "watch_hours": 10.5,
+     "avg_min": 34.9
+    },
+    {
+     "id": 4401814,
+     "title": "After Volkswagen, Chattanooga Nurses Decide to Unionize",
+     "full_title": "After Volkswagen, Chattanooga Nurses Decide to Unionize | TVLR",
+     "show": "The Valley Labor Report",
+     "bucket": "creator",
+     "type": "Creator",
+     "views": 14,
+     "watch_hours": 9.9,
+     "avg_min": 42.4
+    },
+    {
+     "id": 4367979,
+     "title": "Suspiria",
+     "full_title": "Suspiria",
+     "show": "Suspiria",
+     "bucket": "other",
+     "type": "Film",
+     "views": 12,
+     "watch_hours": 8.2,
+     "avg_min": 41.0
+    },
+    {
+     "id": 4405026,
+     "title": "Are We Speedrunning the End of the World?",
+     "full_title": "Are We Speedrunning the End of the World? | Our Changing Climate",
+     "show": "Our Changing Climate",
+     "bucket": "creator",
+     "type": "Creator",
+     "views": 60,
+     "watch_hours": 8.0,
+     "avg_min": 8.0
+    },
+    {
+     "id": 4404054,
+     "title": "MMN Daily · October 21, 2026",
+     "full_title": "October 21, 2026 | MMN Daily",
+     "show": "Means Morning News",
+     "bucket": "mmn",
+     "type": "Means Original",
+     "views": 38,
+     "watch_hours": 8.0,
+     "avg_min": 12.7
+    },
+    {
+     "id": 4402816,
+     "title": "The Hardest Lesson To Learn About The Black Panther Party",
+     "full_title": "The Hardest Lesson To Learn About The Black Panther Party | Prince Shakur",
+     "show": "Prince Shakur",
+     "bucket": "creator",
+     "type": "Creator",
+     "views": 33,
+     "watch_hours": 7.8,
+     "avg_min": 14.1
+    },
+    {
+     "id": 4367975,
+     "title": "The Hobbit",
+     "full_title": "The Hobbit",
+     "show": "The Hobbit",
+     "bucket": "other",
+     "type": "Film",
+     "views": 15,
+     "watch_hours": 7.6,
+     "avg_min": 30.3
+    },
+    {
+     "id": 4286896,
+     "title": "Nocturama",
+     "full_title": "Nocturama",
+     "show": "Nocturama",
+     "bucket": "other",
+     "type": "Film",
+     "views": 7,
+     "watch_hours": 7.2,
+     "avg_min": 61.8
+    },
+    {
+     "id": 4405027,
+     "title": "What Is China's \"Ecological Civilization\"?",
+     "full_title": "What Is China's \"Ecological Civilization\"? | Our Changing Climate",
+     "show": "Our Changing Climate",
+     "bucket": "creator",
+     "type": "Creator",
+     "views": 72,
+     "watch_hours": 7.0,
+     "avg_min": 5.8
+    },
+    {
+     "id": 4355385,
+     "title": "Zedé",
+     "full_title": "Zedé | By Any Means",
+     "show": "By Any Means",
+     "bucket": "other",
+     "type": "Means Original",
+     "views": 10,
+     "watch_hours": 6.4,
+     "avg_min": 38.7
+    },
+    {
+     "id": 4414676,
+     "title": "Wild America S1 E1: All-American Animals",
+     "full_title": "Wild America S1 E1: All-American Animals",
+     "show": "Marty Stouffer's Wild America",
+     "bucket": "other",
+     "type": "Series",
+     "views": 31,
+     "watch_hours": 6.2,
+     "avg_min": 12.1
+    },
+    {
+     "id": 4286847,
+     "title": "Finding Fidel",
+     "full_title": "Finding Fidel",
+     "show": "Finding Fidel",
+     "bucket": "other",
+     "type": "Film",
+     "views": 5,
+     "watch_hours": 6.0,
+     "avg_min": 71.9
+    },
+    {
+     "id": 4393989,
+     "title": "Neoliberalism is rotting your brain (and you're paying for it)",
+     "full_title": "Neoliberalism is rotting your brain (and you're paying for it) | revolutionaryth0t",
+     "show": "revolutionaryth0t",
+     "bucket": "creator",
+     "type": "Creator",
+     "views": 26,
+     "watch_hours": 5.7,
+     "avg_min": 13.1
+    },
+    {
+     "id": 4402635,
+     "title": "MMN Daily · October 20, 2026",
+     "full_title": "October 20, 2026 | MMN Daily",
+     "show": "Means Morning News",
+     "bucket": "mmn",
+     "type": "Means Original",
+     "views": 26,
+     "watch_hours": 5.7,
+     "avg_min": 13.1
+    },
+    {
+     "id": 4394717,
+     "title": "don't trust silicon valley about the apocalypse",
+     "full_title": "don't trust silicon valley about the apocalypse | Michael Burns",
+     "show": "Michael Burns",
+     "bucket": "creator",
+     "type": "Creator",
+     "views": 24,
+     "watch_hours": 5.6,
+     "avg_min": 14.1
+    },
+    {
+     "id": 806836,
+     "title": "Fraud",
+     "full_title": "Fraud",
+     "show": "Fraud",
+     "bucket": "other",
+     "type": "Film",
+     "views": 7,
+     "watch_hours": 5.5,
+     "avg_min": 47.3
+    },
+    {
+     "id": 4367974,
+     "title": "Witchcraft Through the Ages",
+     "full_title": "Witchcraft Through the Ages",
+     "show": "Witchcraft Through the Ages",
+     "bucket": "other",
+     "type": "Film",
+     "views": 6,
+     "watch_hours": 5.4,
+     "avg_min": 53.7
+    },
+    {
+     "id": 4404511,
+     "title": "Second Thought After Dark: Inequality",
+     "full_title": "Second Thought After Dark: Inequality | Second Thought",
+     "show": "Second Thought",
+     "bucket": "creator",
+     "type": "Creator",
+     "views": 27,
+     "watch_hours": 5.3,
+     "avg_min": 11.7
+    },
+    {
+     "id": 3894343,
+     "title": "Episode 2: The Wealth of Nations: A New Gospel?",
+     "full_title": "Episode 2: The Wealth of Nations: A New Gospel?",
+     "show": "CAPITALISM (6-part series)",
+     "bucket": "other",
+     "type": "Series",
+     "views": 6,
+     "watch_hours": 5.2,
+     "avg_min": 51.7
+    },
+    {
+     "id": 4393992,
+     "title": "Why America Supports Israel: The Full Story",
+     "full_title": "Why America Supports Israel: The Full Story | 1Dime",
+     "show": "1Dime",
+     "bucket": "creator",
+     "type": "Creator",
+     "views": 10,
+     "watch_hours": 5.1,
+     "avg_min": 30.5
+    },
+    {
+     "id": 3157703,
+     "title": "Tantura (English CC)",
+     "full_title": "Tantura (English CC)",
+     "show": "Tantura (English CC)",
+     "bucket": "other",
+     "type": "Film",
+     "views": 8,
+     "watch_hours": 4.9,
+     "avg_min": 36.9
+    },
+    {
+     "id": 4367982,
+     "title": "Nosferatu: A Symphony of Horror",
+     "full_title": "Nosferatu: A Symphony of Horror",
+     "show": "Nosferatu: A Symphony of Horror",
+     "bucket": "other",
+     "type": "Film",
+     "views": 5,
+     "watch_hours": 4.7,
+     "avg_min": 56.3
+    },
+    {
+     "id": 4396266,
+     "title": "Tech Bros Don't Understand Sci-Fi",
+     "full_title": "Tech Bros Don't Understand Sci-Fi | Second Thought",
+     "show": "Second Thought",
+     "bucket": "creator",
+     "type": "Creator",
+     "views": 19,
+     "watch_hours": 4.6,
+     "avg_min": 14.5
+    },
+    {
+     "id": 3550627,
+     "title": "Cane Fire",
+     "full_title": "Cane Fire",
+     "show": "Cane Fire",
+     "bucket": "other",
+     "type": "Film",
+     "views": 3,
+     "watch_hours": 4.4,
+     "avg_min": 88.9
+    },
+    {
+     "id": 4374568,
+     "title": "Saddle Lake Cree Nation declares safe haven for gender-affirming care! September 2026",
+     "full_title": "Saddle Lake Cree Nation declares safe haven for gender-affirming care! September 2026 | Positive Leftist News",
+     "show": "Positive Leftist News",
+     "bucket": "creator",
+     "type": "Creator",
+     "views": 20,
+     "watch_hours": 4.1,
+     "avg_min": 12.4
+    },
+    {
+     "id": 4283612,
+     "title": "Build an Army?",
+     "full_title": "Build an Army? | By Any Means",
+     "show": "By Any Means",
+     "bucket": "other",
+     "type": "Means Original",
+     "views": 13,
+     "watch_hours": 4.0,
+     "avg_min": 18.6
+    },
+    {
+     "id": 3025278,
+     "title": "Occupied Palestine",
+     "full_title": "Occupied Palestine",
+     "show": "Occupied Palestine",
+     "bucket": "other",
+     "type": "Film",
+     "views": 4,
+     "watch_hours": 3.9,
+     "avg_min": 58.3
+    },
+    {
+     "id": 3086491,
+     "title": "(English CC) Red Army / P.F.L.P: Declaration of World War",
+     "full_title": "(English CC) Red Army / P.F.L.P: Declaration of World War",
+     "show": "(English CC) Red Army / P.F.L.P: Declaration of World War",
+     "bucket": "other",
+     "type": "Film",
+     "views": 17,
+     "watch_hours": 3.8,
+     "avg_min": 13.4
+    },
+    {
+     "id": 2082426,
+     "title": "Revolution Selfie: The Red Battalion",
+     "full_title": "Revolution Selfie: The Red Battalion",
+     "show": "Revolution Selfie: The Red Battalion",
+     "bucket": "other",
+     "type": "Film",
+     "views": 7,
+     "watch_hours": 3.7,
+     "avg_min": 32.0
+    },
+    {
+     "id": 4367913,
+     "title": "Halloween",
+     "full_title": "Halloween",
+     "show": "Halloween",
+     "bucket": "other",
+     "type": "Film",
+     "views": 19,
+     "watch_hours": 3.7,
+     "avg_min": 11.7
+    },
+    {
+     "id": 4238058,
+     "title": "They Killed the Black Messiah, So Now What?",
+     "full_title": "They Killed the Black Messiah, So Now What? | BGR",
+     "show": "Black Green Red",
+     "bucket": "creator",
+     "type": "Creator",
+     "views": 3,
+     "watch_hours": 3.7,
+     "avg_min": 73.4
+    },
+    {
+     "id": 4367972,
+     "title": "The Wasp Woman",
+     "full_title": "The Wasp Woman",
+     "show": "The Wasp Woman",
+     "bucket": "other",
+     "type": "Film",
+     "views": 3,
+     "watch_hours": 3.7,
+     "avg_min": 73.3
+    },
+    {
+     "id": 4367919,
+     "title": "The Driller Killer",
+     "full_title": "The Driller Killer",
+     "show": "The Driller Killer",
+     "bucket": "other",
+     "type": "Film",
+     "views": 4,
+     "watch_hours": 3.6,
+     "avg_min": 54.3
+    },
+    {
+     "id": 2577635,
+     "title": "Ep2: 2001",
+     "full_title": "Ep2: 2001 | Miss Me Yet",
+     "show": "Miss Me Yet",
+     "bucket": "other",
+     "type": "Means Original",
+     "views": 14,
+     "watch_hours": 3.6,
+     "avg_min": 15.4
+    },
+    {
+     "id": 4367912,
+     "title": "Fortress of the Dead",
+     "full_title": "Fortress of the Dead",
+     "show": "Fortress of the Dead",
+     "bucket": "other",
+     "type": "Film",
+     "views": 5,
+     "watch_hours": 3.5,
+     "avg_min": 42.3
+    },
+    {
+     "id": 4286913,
+     "title": "Ticking Time Bomb: The Truth Behind Takata Airbag",
+     "full_title": "Ticking Time Bomb: The Truth Behind Takata Airbag",
+     "show": "Ticking Time Bomb: The Truth Behind Takata Airbag",
+     "bucket": "other",
+     "type": "Film",
+     "views": 5,
+     "watch_hours": 3.3,
+     "avg_min": 39.9
+    },
+    {
+     "id": 4396701,
+     "title": "MMN Daily · October 15, 2026",
+     "full_title": "October 15, 2026 | MMN Daily",
+     "show": "Means Morning News",
+     "bucket": "mmn",
+     "type": "Means Original",
+     "views": 15,
+     "watch_hours": 3.2,
+     "avg_min": 12.9
+    },
+    {
+     "id": 1776715,
+     "title": "Worlds of Ursula K. Le Guin",
+     "full_title": "Worlds of Ursula K. Le Guin",
+     "show": "Worlds of Ursula K. Le Guin",
+     "bucket": "other",
+     "type": "Film",
+     "views": 12,
+     "watch_hours": 3.2,
+     "avg_min": 16.0
+    },
+    {
+     "id": 4398335,
+     "title": "MMN Daily · October 16, 2026",
+     "full_title": "October 16, 2026 | MMN Daily",
+     "show": "Means Morning News",
+     "bucket": "mmn",
+     "type": "Means Original",
+     "views": 18,
+     "watch_hours": 3.0,
+     "avg_min": 10.2
+    },
+    {
+     "id": 2577636,
+     "title": "Ep3: 2002",
+     "full_title": "Ep3: 2002 | Miss Me Yet",
+     "show": "Miss Me Yet",
+     "bucket": "other",
+     "type": "Means Original",
+     "views": 13,
+     "watch_hours": 3.0,
+     "avg_min": 13.8
+    },
+    {
+     "id": 1284392,
+     "title": "Mario and Marx: the Philosophy of Video Games",
+     "full_title": "Mario and Marx: the Philosophy of Video Games | NonCompete",
+     "show": "NonCompete",
+     "bucket": "creator",
+     "type": "Creator",
+     "views": 12,
+     "watch_hours": 3.0,
+     "avg_min": 15.0
+    },
+    {
+     "id": 4357798,
+     "title": "The Stock Market is Not What You Think It Is.",
+     "full_title": "The Stock Market is Not What You Think It Is. | NonCompete",
+     "show": "NonCompete",
+     "bucket": "creator",
+     "type": "Creator",
+     "views": 7,
+     "watch_hours": 2.9,
+     "avg_min": 24.5
+    },
+    {
+     "id": 4286844,
+     "title": "Disaster Capitalism",
+     "full_title": "Disaster Capitalism",
+     "show": "Disaster Capitalism",
+     "bucket": "other",
+     "type": "Film",
+     "views": 7,
+     "watch_hours": 2.8,
+     "avg_min": 23.9
+    },
+    {
+     "id": 3894495,
+     "title": "Episode 1: Adam Smith, The Birth of the Free Market",
+     "full_title": "Episode 1: Adam Smith, The Birth of the Free Market",
+     "show": "CAPITALISM (6-part series)",
+     "bucket": "other",
+     "type": "Series",
+     "views": 6,
+     "watch_hours": 2.7,
+     "avg_min": 26.8
+    },
+    {
+     "id": 4418084,
+     "title": "The Little Shop of Horrors",
+     "full_title": "The Little Shop of Horrors",
+     "show": "The Little Shop of Horrors",
+     "bucket": "other",
+     "type": "Film",
+     "views": 5,
+     "watch_hours": 2.4,
+     "avg_min": 28.9
+    },
+    {
+     "id": 4376905,
+     "title": "Why are they trying to make you hate disabled people?",
+     "full_title": "Why are they trying to make you hate disabled people? | revolutionaryth0t",
+     "show": "revolutionaryth0t",
+     "bucket": "creator",
+     "type": "Creator",
+     "views": 5,
+     "watch_hours": 2.3,
+     "avg_min": 27.7
+    },
+    {
+     "id": 2577634,
+     "title": "Ep1: 2000",
+     "full_title": "Ep1: 2000 | Miss Me Yet",
+     "show": "Miss Me Yet",
+     "bucket": "other",
+     "type": "Means Original",
+     "views": 12,
+     "watch_hours": 2.1,
+     "avg_min": 10.6
+    },
+    {
+     "id": 4366856,
+     "title": "MMN Daily · September 25, 2026",
+     "full_title": "September 25, 2026 | MMN Daily",
+     "show": "Means Morning News",
+     "bucket": "mmn",
+     "type": "Means Original",
+     "views": 17,
+     "watch_hours": 2.1,
+     "avg_min": 7.4
+    },
+    {
+     "id": 4330398,
+     "title": "What Does It Mean To Be A Marxist? (Deprogram Rectification Movement) - Episode 249",
+     "full_title": "What Does It Mean To Be A Marxist? (Deprogram Rectification Movement) - Episode 249 | The Deprogram",
+     "show": "The Deprogram",
+     "bucket": "creator",
+     "type": "Creator",
+     "views": 1,
+     "watch_hours": 1.9,
+     "avg_min": 112.7
+    },
+    {
+     "id": 4418082,
+     "title": "The Chinese Connection",
+     "full_title": "The Chinese Connection",
+     "show": "The Chinese Connection",
+     "bucket": "other",
+     "type": "Film",
+     "views": 1,
+     "watch_hours": 1.8,
+     "avg_min": 107.0
+    },
+    {
+     "id": 4367429,
+     "title": "Autopsy Report: Lenin - Bonus Episode 19 UNLOCKED",
+     "full_title": "Autopsy Report: Lenin - Bonus Episode 19 UNLOCKED | The Deprogram",
+     "show": "The Deprogram",
+     "bucket": "creator",
+     "type": "Creator",
+     "views": 3,
+     "watch_hours": 1.7,
+     "avg_min": 33.6
+    },
+    {
+     "id": 4393983,
+     "title": "Why Democrats Refuse to Say \"Capitalism\"",
+     "full_title": "Why Democrats Refuse to Say \"Capitalism\" | NonCompete",
+     "show": "NonCompete",
+     "bucket": "creator",
+     "type": "Creator",
+     "views": 8,
+     "watch_hours": 1.7,
+     "avg_min": 12.6
+    },
+    {
+     "id": 4335885,
+     "title": "Greg Stoker",
+     "full_title": "Greg Stoker |  By Any Means",
+     "show": "By Any Means",
+     "bucket": "other",
+     "type": "Means Original",
+     "views": 2,
+     "watch_hours": 1.6,
+     "avg_min": 49.3
+    },
+    {
+     "id": 4418073,
+     "title": "My Man Godfrey",
+     "full_title": "My Man Godfrey",
+     "show": "My Man Godfrey",
+     "bucket": "other",
+     "type": "Film",
+     "views": 3,
+     "watch_hours": 1.6,
+     "avg_min": 32.6
+    },
+    {
+     "id": 4286834,
+     "title": "Animal Farm",
+     "full_title": "Animal Farm",
+     "show": "Animal Farm",
+     "bucket": "other",
+     "type": "Film",
+     "views": 2,
+     "watch_hours": 1.6,
+     "avg_min": 47.5
+    },
+    {
+     "id": 302806,
+     "title": "Gaza Fights for Freedom",
+     "full_title": "Gaza Fights for Freedom",
+     "show": "Gaza Fights for Freedom",
+     "bucket": "other",
+     "type": "Film",
+     "views": 11,
+     "watch_hours": 1.6,
+     "avg_min": 8.5
+    },
+    {
+     "id": 4418083,
+     "title": "The Cocoanuts",
+     "full_title": "The Cocoanuts",
+     "show": "The Cocoanuts",
+     "bucket": "other",
+     "type": "Film",
+     "views": 1,
+     "watch_hours": 1.5,
+     "avg_min": 91.5
+    },
+    {
+     "id": 4255406,
+     "title": "Artificial Intelligence is Speeding Up Capitalism’s Greatest Crisis",
+     "full_title": "Artificial Intelligence is Speeding Up Capitalism’s Greatest Crisis | NonCompete",
+     "show": "NonCompete",
+     "bucket": "creator",
+     "type": "Creator",
+     "views": 4,
+     "watch_hours": 1.5,
+     "avg_min": 22.7
+    },
+    {
+     "id": 3894138,
+     "title": "Episode 3: Ricardo and Malthus: Did You Say Freedom?",
+     "full_title": "Episode 3: Ricardo and Malthus: Did You Say Freedom?",
+     "show": "CAPITALISM (6-part series)",
+     "bucket": "other",
+     "type": "Series",
+     "views": 2,
+     "watch_hours": 1.5,
+     "avg_min": 44.5
+    },
+    {
+     "id": 3882743,
+     "title": "UNION",
+     "full_title": "UNION",
+     "show": "UNION",
+     "bucket": "other",
+     "type": "Film",
+     "views": 4,
+     "watch_hours": 1.4,
+     "avg_min": 21.4
+    },
+    {
+     "id": 3654899,
+     "title": "Sam Sacks Explains The News",
+     "full_title": "Sam Sacks Explains The News | TVLR",
+     "show": "The Valley Labor Report",
+     "bucket": "creator",
+     "type": "Creator",
+     "views": 1,
+     "watch_hours": 1.4,
+     "avg_min": 83.9
+    },
+    {
+     "id": 4374351,
+     "title": "The Revolutionary Viewpoint of Marxism - Marxist Theory 101",
+     "full_title": "The Revolutionary Viewpoint of Marxism - Marxist Theory 101 | Luna Oi!",
+     "show": "Luna Oi!",
+     "bucket": "creator",
+     "type": "Creator",
+     "views": 6,
+     "watch_hours": 1.3,
+     "avg_min": 12.8
+    },
+    {
+     "id": 4139588,
+     "title": "Why is America so Cruel to Cuba?",
+     "full_title": "Why is America so Cruel to Cuba? | NonCompete",
+     "show": "NonCompete",
+     "bucket": "creator",
+     "type": "Creator",
+     "views": 3,
+     "watch_hours": 1.1,
+     "avg_min": 22.9
+    },
+    {
+     "id": 4418075,
+     "title": "Revolution of the Heart: The Dorothy Day Story",
+     "full_title": "Revolution of the Heart: The Dorothy Day Story",
+     "show": "Revolution of the Heart: The Dorothy Day Story",
+     "bucket": "other",
+     "type": "Film",
+     "views": 1,
+     "watch_hours": 0.9,
+     "avg_min": 54.9
+    },
+    {
+     "id": 4231609,
+     "title": "FREEDOM 250 and the Rise of Asshole Culture",
+     "full_title": "FREEDOM 250 and the Rise of Asshole Culture | NonCompete",
+     "show": "NonCompete",
+     "bucket": "creator",
+     "type": "Creator",
+     "views": 1,
+     "watch_hours": 0.7,
+     "avg_min": 43.7
+    },
+    {
+     "id": 4286877,
+     "title": "Devil Put the Coal in the Ground",
+     "full_title": "Devil Put the Coal in the Ground",
+     "show": "Devil Put the Coal in the Ground",
+     "bucket": "other",
+     "type": "Film",
+     "views": 5,
+     "watch_hours": 0.7,
+     "avg_min": 7.9
+    },
+    {
+     "id": 4070401,
+     "title": "Types of Marxism Explained (The Far-Left Iceberg)",
+     "full_title": "Types of Marxism Explained (The Far-Left Iceberg) | 1Dime",
+     "show": "1Dime",
+     "bucket": "creator",
+     "type": "Creator",
+     "views": 2,
+     "watch_hours": 0.4,
+     "avg_min": 11.2
+    },
+    {
+     "id": 4286868,
+     "title": "Nomad: In the Footsteps of Bruce Chatwin",
+     "full_title": "Nomad: In the Footsteps of Bruce Chatwin",
+     "show": "Nomad: In the Footsteps of Bruce Chatwin",
+     "bucket": "other",
+     "type": "Film",
+     "views": 2,
+     "watch_hours": 0.3,
+     "avg_min": 8.4
+    },
+    {
+     "id": 4269981,
+     "title": "How the Black Panther Party Organized a Revolution",
+     "full_title": "How the Black Panther Party Organized a Revolution | Prince Shakur",
+     "show": "Prince Shakur",
+     "bucket": "creator",
+     "type": "Creator",
+     "views": 2,
+     "watch_hours": 0.1,
+     "avg_min": 2.9
+    },
+    {
+     "id": 1764051,
+     "title": "Bisbee '17",
+     "full_title": "Bisbee '17",
+     "show": "Bisbee '17",
+     "bucket": "other",
+     "type": "Film",
+     "views": 2,
+     "watch_hours": 0.1,
+     "avg_min": 2.2
+    },
+    {
+     "id": 4418077,
+     "title": "Salt of the Earth",
+     "full_title": "Salt of the Earth",
+     "show": "Salt of the Earth",
+     "bucket": "other",
+     "type": "Film",
+     "views": 1,
+     "watch_hours": 0.0,
+     "avg_min": 2.8
+    }
+   ],
+   "buckets": {
+    "creator": {
+     "count": 30,
+     "views": 888,
+     "watch_hours": 252.3,
+     "by_type": {
+      "Creator": {
+       "views": 888,
+       "watch_hours": 252.3,
+       "count": 30
+      }
+     }
+    },
+    "other": {
+     "count": 44,
+     "views": 379,
+     "watch_hours": 191.6,
+     "by_type": {
+      "Means Original": {
+       "views": 110,
+       "watch_hours": 49.6,
+       "count": 7
+      },
+      "Film": {
+       "views": 224,
+       "watch_hours": 126.4,
+       "count": 33
+      },
+      "Series": {
+       "views": 45,
+       "watch_hours": 15.6,
+       "count": 4
+      }
+     }
+    },
+    "mmn": {
+     "count": 11,
+     "views": 1319,
+     "watch_hours": 311.1,
+     "by_type": {
+      "Means Original": {
+       "views": 1319,
+       "watch_hours": 311.1,
+       "count": 11
+      }
+     }
+    }
+   },
+   "shows": {
+    "creator": [
+     {
+      "show": "The Deprogram",
+      "type": "Creator",
+      "views": 135,
+      "watch_hours": 72.1,
+      "videos": 3
+     },
+     {
+      "show": "Second Thought",
+      "type": "Creator",
+      "views": 230,
+      "watch_hours": 47.7,
+      "videos": 4
+     },
+     {
+      "show": "NonCompete",
+      "type": "Creator",
+      "views": 107,
+      "watch_hours": 32.8,
+      "videos": 7
+     },
+     {
+      "show": "Hakim",
+      "type": "Creator",
+      "views": 111,
+      "watch_hours": 23.4,
+      "videos": 1
+     },
+     {
+      "show": "Our Changing Climate",
+      "type": "Creator",
+      "views": 132,
+      "watch_hours": 15.0,
+      "videos": 2
+     },
+     {
+      "show": "Moss Planet",
+      "type": "Creator",
+      "views": 27,
+      "watch_hours": 13.9,
+      "videos": 1
+     },
+     {
+      "show": "The Valley Labor Report",
+      "type": "Creator",
+      "views": 15,
+      "watch_hours": 11.3,
+      "videos": 2
+     },
+     {
+      "show": "revolutionaryth0t",
+      "type": "Creator",
+      "views": 31,
+      "watch_hours": 8.0,
+      "videos": 2
+     },
+     {
+      "show": "Prince Shakur",
+      "type": "Creator",
+      "views": 35,
+      "watch_hours": 7.9,
+      "videos": 2
+     },
+     {
+      "show": "Michael Burns",
+      "type": "Creator",
+      "views": 24,
+      "watch_hours": 5.6,
+      "videos": 1
+     },
+     {
+      "show": "1Dime",
+      "type": "Creator",
+      "views": 12,
+      "watch_hours": 5.5,
+      "videos": 2
+     },
+     {
+      "show": "Positive Leftist News",
+      "type": "Creator",
+      "views": 20,
+      "watch_hours": 4.1,
+      "videos": 1
+     },
+     {
+      "show": "Black Green Red",
+      "type": "Creator",
+      "views": 3,
+      "watch_hours": 3.7,
+      "videos": 1
+     },
+     {
+      "show": "Luna Oi!",
+      "type": "Creator",
+      "views": 6,
+      "watch_hours": 1.3,
+      "videos": 1
+     }
+    ],
+    "other": [
+     {
+      "show": "By Any Means",
+      "type": "Means Original",
+      "views": 71,
+      "watch_hours": 40.9,
+      "videos": 4
+     },
+     {
+      "show": "Night of the Living Dead",
+      "type": "Film",
+      "views": 17,
+      "watch_hours": 12.9,
+      "videos": 1
+     },
+     {
+      "show": "Cuba After Castro: The Island in the Crosshairs",
+      "type": "Film",
+      "views": 18,
+      "watch_hours": 10.5,
+      "videos": 1
+     },
+     {
+      "show": "CAPITALISM (6-part series)",
+      "type": "Series",
+      "views": 14,
+      "watch_hours": 9.4,
+      "videos": 3
+     },
+     {
+      "show": "Miss Me Yet",
+      "type": "Means Original",
+      "views": 39,
+      "watch_hours": 8.7,
+      "videos": 3
+     },
+     {
+      "show": "Suspiria",
+      "type": "Film",
+      "views": 12,
+      "watch_hours": 8.2,
+      "videos": 1
+     },
+     {
+      "show": "The Hobbit",
+      "type": "Film",
+      "views": 15,
+      "watch_hours": 7.6,
+      "videos": 1
+     },
+     {
+      "show": "Nocturama",
+      "type": "Film",
+      "views": 7,
+      "watch_hours": 7.2,
+      "videos": 1
+     },
+     {
+      "show": "Marty Stouffer's Wild America",
+      "type": "Series",
+      "views": 31,
+      "watch_hours": 6.2,
+      "videos": 1
+     },
+     {
+      "show": "Finding Fidel",
+      "type": "Film",
+      "views": 5,
+      "watch_hours": 6.0,
+      "videos": 1
+     },
+     {
+      "show": "Fraud",
+      "type": "Film",
+      "views": 7,
+      "watch_hours": 5.5,
+      "videos": 1
+     },
+     {
+      "show": "Witchcraft Through the Ages",
+      "type": "Film",
+      "views": 6,
+      "watch_hours": 5.4,
+      "videos": 1
+     },
+     {
+      "show": "Tantura (English CC)",
+      "type": "Film",
+      "views": 8,
+      "watch_hours": 4.9,
+      "videos": 1
+     },
+     {
+      "show": "Nosferatu: A Symphony of Horror",
+      "type": "Film",
+      "views": 5,
+      "watch_hours": 4.7,
+      "videos": 1
+     },
+     {
+      "show": "Cane Fire",
+      "type": "Film",
+      "views": 3,
+      "watch_hours": 4.4,
+      "videos": 1
+     },
+     {
+      "show": "Occupied Palestine",
+      "type": "Film",
+      "views": 4,
+      "watch_hours": 3.9,
+      "videos": 1
+     },
+     {
+      "show": "(English CC) Red Army / P.F.L.P: Declaration of World War",
+      "type": "Film",
+      "views": 17,
+      "watch_hours": 3.8,
+      "videos": 1
+     },
+     {
+      "show": "Revolution Selfie: The Red Battalion",
+      "type": "Film",
+      "views": 7,
+      "watch_hours": 3.7,
+      "videos": 1
+     },
+     {
+      "show": "Halloween",
+      "type": "Film",
+      "views": 19,
+      "watch_hours": 3.7,
+      "videos": 1
+     },
+     {
+      "show": "The Wasp Woman",
+      "type": "Film",
+      "views": 3,
+      "watch_hours": 3.7,
+      "videos": 1
+     },
+     {
+      "show": "The Driller Killer",
+      "type": "Film",
+      "views": 4,
+      "watch_hours": 3.6,
+      "videos": 1
+     },
+     {
+      "show": "Fortress of the Dead",
+      "type": "Film",
+      "views": 5,
+      "watch_hours": 3.5,
+      "videos": 1
+     },
+     {
+      "show": "Ticking Time Bomb: The Truth Behind Takata Airbag",
+      "type": "Film",
+      "views": 5,
+      "watch_hours": 3.3,
+      "videos": 1
+     },
+     {
+      "show": "Worlds of Ursula K. Le Guin",
+      "type": "Film",
+      "views": 12,
+      "watch_hours": 3.2,
+      "videos": 1
+     },
+     {
+      "show": "Disaster Capitalism",
+      "type": "Film",
+      "views": 7,
+      "watch_hours": 2.8,
+      "videos": 1
+     },
+     {
+      "show": "The Little Shop of Horrors",
+      "type": "Film",
+      "views": 5,
+      "watch_hours": 2.4,
+      "videos": 1
+     },
+     {
+      "show": "The Chinese Connection",
+      "type": "Film",
+      "views": 1,
+      "watch_hours": 1.8,
+      "videos": 1
+     },
+     {
+      "show": "My Man Godfrey",
+      "type": "Film",
+      "views": 3,
+      "watch_hours": 1.6,
+      "videos": 1
+     },
+     {
+      "show": "Animal Farm",
+      "type": "Film",
+      "views": 2,
+      "watch_hours": 1.6,
+      "videos": 1
+     },
+     {
+      "show": "Gaza Fights for Freedom",
+      "type": "Film",
+      "views": 11,
+      "watch_hours": 1.6,
+      "videos": 1
+     },
+     {
+      "show": "The Cocoanuts",
+      "type": "Film",
+      "views": 1,
+      "watch_hours": 1.5,
+      "videos": 1
+     },
+     {
+      "show": "UNION",
+      "type": "Film",
+      "views": 4,
+      "watch_hours": 1.4,
+      "videos": 1
+     },
+     {
+      "show": "Revolution of the Heart: The Dorothy Day Story",
+      "type": "Film",
+      "views": 1,
+      "watch_hours": 0.9,
+      "videos": 1
+     },
+     {
+      "show": "Devil Put the Coal in the Ground",
+      "type": "Film",
+      "views": 5,
+      "watch_hours": 0.7,
+      "videos": 1
+     },
+     {
+      "show": "Nomad: In the Footsteps of Bruce Chatwin",
+      "type": "Film",
+      "views": 2,
+      "watch_hours": 0.3,
+      "videos": 1
+     },
+     {
+      "show": "Bisbee '17",
+      "type": "Film",
+      "views": 2,
+      "watch_hours": 0.1,
+      "videos": 1
+     },
+     {
+      "show": "Salt of the Earth",
+      "type": "Film",
+      "views": 1,
+      "watch_hours": 0.0,
+      "videos": 1
+     }
+    ],
+    "mmn": [
+     {
+      "show": "Means Morning News",
+      "type": "Means Original",
+      "views": 1319,
+      "watch_hours": 311.1,
+      "videos": 11
+     }
+    ]
+   },
+   "top50": {
+    "creator": 232.3,
+    "other": 160.8,
+    "mmn": 302.8
+   }
+  }
+ },
+ "new_titles": null,
+ "derived": true
+}

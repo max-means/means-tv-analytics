@@ -116,6 +116,12 @@
 
   <section class="card split" id="split"></section>
 
+  <section class="card" style="margin-bottom:12px" id="trend-card">
+    <div class="card-head"><h2>Weekly trend</h2></div>
+    <div class="hint">Watch hours per week among each week's top 50 videos (so every week is measured the same way). Hover for values.</div>
+    <div id="trend"></div>
+  </section>
+
   <section class="grid2">
     <div class="card">
       <div class="card-head"><h2><span class="swatch" style="background:var(--creator)"></span>Top creator videos</h2>
@@ -228,17 +234,19 @@
     const b = w.buckets, tot = sumB(w, 'watch_hours');
     const p = prevSnap(), pw = p && p.windows[state.win];
     const st = snap.store;
-    const prevNote = pw ? ` vs last snapshot` : '';
-    const bk = (k, label) => [label, fmt(b[k].watch_hours), `${pct(b[k].watch_hours / tot)} of total · ${b[k].count} videos`,
-        pw && pw.buckets[k] ? delta(b[k].watch_hours, pw.buckets[k].watch_hours, prevNote) : '', k];
+    const t50 = x => x.top50 ? BK.reduce((a, k) => a + x.top50[k], 0) : null;
+    const note = pw ? ` vs ${p.date}` : '';
+    const d = (k) => pw && pw.top50 && w.top50 ? delta(k ? w.top50[k] : t50(w), k ? pw.top50[k] : t50(pw), note) : '';
+    const bk = (k, label) => [label, fmt(b[k].watch_hours), `${pct(b[k].watch_hours / tot)} of total · ${b[k].count} videos`, d(k), k];
     $('#kpis').innerHTML = [
-      ['Total watch hours', fmt(tot), `${fmt(sumB(w, 'views'))} views · top 100 videos`,
-        pw ? delta(tot, sumB(pw, 'watch_hours'), prevNote) : '', null],
+      ['Total watch hours', fmt(tot), `${fmt(sumB(w, 'views'))} views · top ${w.items.length} videos`, d(null), null],
       bk('creator', 'Creator videos'), bk('other', 'Films & series'), bk('mmn', 'MMN Daily'),
-      ['Active subscribers', fmt(st.active_subscribers), `${delta(st.active_subscribers, st.active_subscribers_prior_month)} vs ${st.prior_month_as_of}`, '', null],
-      ['MRR', '$' + fmt(Math.round(st.mrr.amount)), `${delta(st.mrr.amount, st.mrr_prior_month.amount)} vs ${st.prior_month_as_of}`, '', null],
-    ].map(([l, v, n, d, sw]) => `<div class="card kpi"><div class="label">${sw ? `<span class="swatch" style="background:${COLOR[sw]}"></span>` : ''}${l}</div>
-      <div class="value">${v}</div><div class="note">${n}</div>${d ? `<div class="note">${d}</div>` : ''}</div>`).join('');
+      st ? ['Active subscribers', fmt(st.active_subscribers), `${delta(st.active_subscribers, st.active_subscribers_prior_month)} vs ${st.prior_month_as_of}`, '', null]
+         : ['Active subscribers', '—', 'Not recorded for this week', '', null],
+      st ? ['MRR', '$' + fmt(Math.round(st.mrr.amount)), `${delta(st.mrr.amount, st.mrr_prior_month.amount)} vs ${st.prior_month_as_of}`, '', null]
+         : ['MRR', '—', 'Not recorded for this week', '', null],
+    ].map(([l, v, n, dd, sw]) => `<div class="card kpi"><div class="label">${sw ? `<span class="swatch" style="background:${COLOR[sw]}"></span>` : ''}${l}</div>
+      <div class="value">${v}</div><div class="note">${n}</div>${dd ? `<div class="note" title="Change in watch hours among each week's top 50 videos">${dd}</div>` : ''}</div>`).join('');
   }
 
   function renderSplit(w) {
@@ -344,7 +352,8 @@
   function render() {
     if (!SNAPS.length) { document.body.innerHTML = '<p style="padding:40px">No data yet.</p>'; return; }
     const snap = SNAPS[state.snap], w = snap.windows[state.win];
-    $('#subtitle').textContent = `Snapshot ${snap.date} · ${state.win === '7d' ? 'trailing 7 days' : 'trailing 30 days'} · Uscreen analytics`;
+    $('#subtitle').textContent = `Snapshot ${snap.date} · ${state.win === '7d' ? 'trailing 7 days' : 'trailing 30 days'} · Uscreen analytics` +
+      (snap.derived ? ' · reconstructed from later data' : '');
     document.querySelectorAll('.seg button').forEach(b => b.setAttribute('aria-pressed', b.dataset.win === state.win));
     const types = ['All', ...['Means Original', 'Film', 'Series', 'Unmatched'].filter(t => w.buckets.other.by_type[t])];
     if (!types.includes(state.otherType)) state.otherType = 'All';
@@ -352,13 +361,43 @@
     chips($('#metric-c'), Object.keys(METRICS), 'creatorMetric', METRICS);
     chips($('#metric-m'), Object.keys(METRICS), 'mmnMetric', METRICS);
     chips($('#bucket-filter'), ['All', 'creator', 'other', 'mmn'], 'bucket', { creator: 'Creator videos', other: 'Films & series', mmn: 'MMN Daily' });
-    renderKpis(snap, w); renderSplit(w); renderTop(w); renderTable(w); renderPush(snap);
+    renderKpis(snap, w); renderSplit(w); renderTrend(); renderTop(w); renderTable(w); renderPush(snap);
     $('#foot').innerHTML = `<b>How to read this.</b> Data is Uscreen's top 100 videos by watch time for each window (it's batch-synced, so the last day or so may be incomplete).
-      Totals are for those 100 videos, not the whole catalog. "Avg min/view" = watch time ÷ views, a rough engagement signal (long videos naturally score higher).
+      Totals are for those videos, not the whole catalog; week-over-week arrows compare each week&rsquo;s top 50 videos so rebuilt and live weeks are measured the same way. "Avg min/view" = watch time ÷ views, a rough engagement signal (long videos naturally score higher).
       Creator videos are titles whose "| Name" suffix matches a collection in the CREATORS category; MMN Daily is tracked as its own group; By Any Means, Miss Me Yet and other Means TV Originals sit with films &amp; series.
-      Subscriber and MRR figures are this month vs prior month as reported by Uscreen. Classification rules live in <code>config/classification.json</code>.`;
+      Subscriber and MRR figures are this month vs prior month as reported by Uscreen. Classification rules live in <code>config/classification.json</code>.` +
+      (snap.derived ? ` <b>This week was rebuilt afterwards</b> by subtracting overlapping Uscreen windows (e.g. last 14 days minus last 7), so long-tail numbers can be slightly high; subscriber/MRR and the new-titles section weren't recorded for it.` : '');
   }
 
+
+
+  function renderTrend() {
+    const el = $('#trend'), snaps = SNAPS.filter(x => x.windows['7d'].top50);
+    if (snaps.length < 2) { $('#trend-card').style.display = 'none'; return; }
+    $('#trend-card').style.display = '';
+    const W = el.clientWidth || 1200, H = 220, L = 48, R = 130, T = 14, Bm = 28;
+    const series = [['creator', 'Creator videos'], ['other', 'Films & series'], ['mmn', 'MMN Daily']];
+    const max = Math.max(...snaps.flatMap(x => series.map(([k]) => x.windows['7d'].top50[k]))) * 1.1;
+    const x = i => L + (W - L - R) * (snaps.length === 1 ? 0.5 : i / (snaps.length - 1));
+    const y = v => T + (H - T - Bm) * (1 - v / max);
+    const ticks = [0, 0.25, 0.5, 0.75, 1].map(f => Math.round(max * f / 50) * 50);
+    let svg = `<svg width="100%" viewBox="0 0 ${W} ${H}" role="img" aria-label="Weekly watch hours trend">`;
+    ticks.forEach(t => svg += `<line x1="${L}" x2="${W - R}" y1="${y(t)}" y2="${y(t)}" stroke="var(--grid)"/><text x="${L - 8}" y="${y(t) + 4}" text-anchor="end" font-size="11" fill="var(--text-muted)">${t}</text>`);
+    snaps.forEach((sn, i) => svg += `<text x="${x(i)}" y="${H - 8}" text-anchor="middle" font-size="11" fill="var(--text-muted)">${sn.date.slice(5)}${sn.derived ? '*' : ''}</text>`);
+    series.forEach(([k, label]) => {
+      const pts = snaps.map((sn, i) => [x(i), y(sn.windows['7d'].top50[k])]);
+      svg += `<polyline fill="none" stroke="${COLOR[k]}" stroke-width="2" points="${pts.map(p => p.join(',')).join(' ')}"/>`;
+      pts.forEach(([px, py], i) => svg += `<circle cx="${px}" cy="${py}" r="4.5" fill="${COLOR[k]}" stroke="var(--surface-1)" stroke-width="2" data-k="${label}" data-i="${i}" data-s="${k}"/>`);
+      const last = pts[pts.length - 1];
+      svg += `<text x="${last[0] + 10}" y="${last[1] + 4}" font-size="12" fill="var(--text-secondary)">${label}</text>`;
+    });
+    el.innerHTML = svg + '</svg><div class="hint" style="margin:4px 0 0">* rebuilt afterwards from overlapping Uscreen windows</div>';
+    el.querySelectorAll('circle').forEach(c => {
+      const sn = snaps[+c.dataset.i];
+      c.onmousemove = e => showTip(e, `<b>${c.dataset.k}</b>${tipRows([['Week ending', sn.date], ['Watch hours (top 50)', fmt(sn.windows['7d'].top50[c.dataset.s])]])}`);
+      c.onmouseleave = hideTip;
+    });
+  }
 
   // --- new titles that need a push (snapshot-level, independent of the 7/30-day toggle)
   state.pushView = 'push'; state.hideSeasonal = true;

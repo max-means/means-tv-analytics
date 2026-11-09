@@ -55,6 +55,9 @@ def window(raw):
             "avg_min": round(wt / v / 60, 1) if v else 0,
         })
     out = {"days": raw["days"], "items": items, "buckets": {}, "shows": {}}
+    # week-over-week deltas compare each window's top 50 videos so every snapshot is measured the same way
+    top50 = sorted(items, key=lambda i: -i["watch_hours"])[:50]
+    out["top50"] = {b: round(sum(i["watch_hours"] for i in top50 if i["bucket"] == b), 1) for b in ("creator", "other", "mmn")}
     for b in ("creator", "other", "mmn"):
         sub = [i for i in items if i["bucket"] == b]
         out["buckets"][b] = {
@@ -126,6 +129,7 @@ def main(raw_dir):
         },
     }
     snap["new_titles"] = new_titles(raw_dir / "new_titles.json", date)
+    snap["derived"] = "_derived" in json.load(open(raw_dir / "top_7d.json"))
     unmatched = {i["full_title"] for w in snap["windows"].values() for i in w["items"] if i["type"] == "Unmatched"}
     os.makedirs(ROOT / "data/snapshots", exist_ok=True)
     json.dump(snap, open(ROOT / f"data/snapshots/{date}.json", "w"), indent=1, ensure_ascii=False)
