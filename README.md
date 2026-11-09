@@ -2,7 +2,7 @@
 
 A static dashboard (no build step) showing which Uscreen videos performed best over the past 7 and 30 days, split into **creator videos** and **films & non-creator series**.
 
-Open `index.html` in a browser, or view it on GitHub Pages.
+Live: https://max-means.github.io/means-tv-analytics/ — updated weekly (see `RUNBOOK.md`).
 
 ## Files
 - `index.html` — the dashboard. Plain HTML/JS, no dependencies.
